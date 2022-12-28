@@ -1,4 +1,4 @@
-baseURL = ''
+baseURL = 'https://thereasonablesolution.netlify.app/'
 languageCode = 'en-us'
-title = 'The Mods'
+title = 'The Reasonable Solution'
 theme = 'papermod'
