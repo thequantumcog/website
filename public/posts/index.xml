@@ -1,28 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on The Mods</title>
-    <link>/posts/</link>
-    <description>Recent content in Posts on The Mods</description>
+    <title>Posts on The Reasonable Solution</title>
+    <link>https://thereasonablesolution.netlify.app/posts/</link>
+    <description>Recent content in Posts on The Reasonable Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 28 Dec 2022 13:07:16 +0500</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 04 Jan 2023 13:05:38 +0500</lastBuildDate><atom:link href="https://thereasonablesolution.netlify.app/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Second</title>
-      <link>/posts/second/</link>
-      <pubDate>Wed, 28 Dec 2022 13:07:16 +0500</pubDate>
+      <title>SpotX: The Spotify Adblocker You&#39;ve Been Waiting For</title>
+      <link>https://thereasonablesolution.netlify.app/spotx/</link>
+      <pubDate>Wed, 04 Jan 2023 13:05:38 +0500</pubDate>
       
-      <guid>/posts/second/</guid>
-      <description>THIS IS SECOND </description>
-    </item>
-    
-    <item>
-      <title>First</title>
-      <link>/posts/first/</link>
-      <pubDate>Wed, 28 Dec 2022 13:05:38 +0500</pubDate>
-      
-      <guid>/posts/first/</guid>
-      <description>INTRODUCTION this is my first post</description>
+      <guid>https://thereasonablesolution.netlify.app/spotx/</guid>
+      <description>Are you tired of constantly being interrupted by ads while listening to your favorite music on Spotify? If so, you&amp;rsquo;re in luck! Introducing SpotX, the Spotify ad blocker that will revolutionize the way you listen to music. SpotX is a simple, lightweight tool that blocks all ads on Spotify, allowing you to enjoy uninterrupted music all day long. With SpotX, you no longer have to put up with annoying ads or pay for a premium subscription to get rid of them.</description>
     </item>
     
   </channel>
