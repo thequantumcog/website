@@ -1,0 +1,4 @@
+baseURL: 'https://thereasonablesolution.netlify.app/'
+languageCode: en-us
+title: The Reasonable Solution
+theme: papermod
