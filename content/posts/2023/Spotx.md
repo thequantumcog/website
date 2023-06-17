@@ -6,9 +6,8 @@ image: images/2023/spotx.png
 draft: false
 
 ---
-
-*Are you tired of constantly being interrupted by ads while listening to your favorite music on Spotify?* If so, you're in luck! Introducing SpotX, the Spotify ad blocker that will revolutionize the way you listen to music.
 ![Spotx Image](/images/2023/spotx.png)
+*Are you tired of constantly being interrupted by ads while listening to your favorite music on Spotify?* If so, you're in luck! Introducing SpotX, the Spotify ad blocker that will revolutionize the way you listen to music.
 
 SpotX is a simple, lightweight tool that blocks all ads on Spotify, allowing you to enjoy uninterrupted music all day long. With SpotX, you no longer have to put up with annoying ads or pay for a premium subscription to get rid of them. Simply download the tool, run it, and you're good to go.
 
@@ -24,7 +23,7 @@ It is available for Windows, Linux and MacOS. It is easy to run and the best par
 
 ### Installation
 
-Just goto to the [repo](https://github.com/SpotX-CLI/SpotX-Win#automatic-installation-without-confirmation-what-does-it-do) and just run the command. 
+Just goto to the [repo](https://github.com/SpotX-CLI/SpotX-Win#automatic-installation-without-confirmation-what-does-it-do) and just run the command.
 **However,** if you have installed Spotify from Microsoft Store, It would be uninstalled and the script would automatically install the latest official version from spotify.
 
 
