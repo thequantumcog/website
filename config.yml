@@ -1,115 +1,120 @@
-baseURL: "https://thereasonablesolution.netlify.app/"
+baseURL: "https://thereasonablesolution.netlify.app" # if your site is in 'https', then make sure your base url isn't written using 'http' otherwise your sitemap would contain http (as opposeed to https) URLs. This would affect Google indexing of your URLs.
 title: The Reasonable Solution
 paginate: 5
 theme: papermod
 
+enableInlineShortcodes: true
 enableRobotsTXT: true
 buildDrafts: false
 buildFuture: false
 buildExpired: false
-
+enableEmoji: true
+pygmentsUseClasses: true
 # googleAnalytics: UA-123-45
 
 minify:
   disableXML: true
-  minifyOutput: true
+  # minifyOutput: true
+
+languageName: "English"
+weight: 1
+taxonomies:
+category: categories
+tag: tags
+series: series
+menu:
+  main:
+    - name: Archive
+      url: archives
+      weight: 5
+    - name: Search
+      url: search/
+      weight: 10
+    - name: Tags
+      url: tags/
+      weight: 10
+    - name: About Me
+      url: https://ar0177417.netlify.app
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
 
 params:
-  env: development # to enable google analytics, opengraph, twitter-cards and schema.
+  env: development # to enable google analytics, opengraph, twitter-cards and schema. set to production
   title: "The Reasonable Solution"
   description: "Website from a passionate blogger and a linux nerd"
-  keywords: [Blog, Portfolio, PaperMod]
   author: ar0177417
   # author: ["Me", "You"] # multiple authors
-  images: ["<link or path of image for opengraph, twitter-cards>"]
-  DateFormat: "January 2, 2006"
-  defaultTheme: auto # dark, light
-  disableThemeToggle: false
 
-  ShowReadingTime: true
+  defaultTheme: auto
+  # disableThemeToggle: true
   ShowShareButtons: true
+  ShowReadingTime: true
+  # disableSpecial1stPost: true
+  displayFullLangName: true
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
-  ShowCodeCopyButtons: false
-  ShowWordCount: true
+  ShowCodeCopyButtons: true
   ShowRssButtonInSectionTermList: true
-  UseHugoToc: true
-  disableSpecial1stPost: false
-  disableScrollToTop: false
-  comments: false
-  hidemeta: false
-  hideSummary: false
-  showtoc: false
-  tocopen: false
+  ShowToc: true
+  # comments: false
+  # images: ["papermod-cover.png"]
 
-  assets:
-    # disableHLJS: true # to disable highlight.js
-    # disableFingerprinting: true
-    favicon: "<link / abs url>"
-    favicon16x16: "<link / abs url>"
-    favicon32x32: "<link / abs url>"
-    apple_touch_icon: "<link / abs url>"
-    safari_pinned_tab: "<link / abs url>"
-
-  outputs:
-    home:
-      - HTML
-      - RSS
-      - JSON # is necessary
-
-  label:
-    text: "Home"
-    icon: /apple-touch-icon.png
-    iconHeight: 35
-
-  # profile-mode
   profileMode:
-    enabled: false # needs to be explicitly set
-    title: ExampleSite
-    subtitle: "This is subtitle"
-    imageUrl: "<img location>"
-    imageWidth: 120
-    imageHeight: 120
+    enabled: false
+    title: PaperMod
+    imageUrl: "#"
     imageTitle: my image
+    # imageWidth: 120
+    # imageHeight: 120
     buttons:
-      - name: Posts
-        url: posts
+      - name: Archives
+        url: archives
       - name: Tags
         url: tags
 
-  # home-info mode
   homeInfoParams:
     Title: "Hi there \U0001F44B"
     Content: Welcome to my blog
 
   socialIcons:
-    - name: twitter
-      url: "https://twitter.com/ar0177417"
-    - name: stackoverflow
-      url: "https://stackoverflow.com/ar0177417"
     - name: github
       url: "https://github.com/ardrag0n"
-
-  # analytics:
-  #   google:
-  #     SiteVerificationTag: "XYZabc"
-  #   bing:
-  #     SiteVerificationTag: "XYZabc"
-  #   yandex:
-  #     SiteVerificationTag: "XYZabc"
-
-  cover:
-    hidden: true # hide everywhere but not in structured data
-    hiddenInList: true # hide on list pages and home
-    hiddenInSingle: true # hide on single page
+    - name: Twitter
+      url: "https://twitter.com/ar0177417"
+    - name: Rss
+      url: "index.xml"
 
   editPost:
-    URL: "https://github.com/<path_to_repo>/content"
+    URL: "https://github.com/ardrag0n/website/content"
     Text: "Suggest Changes" # edit text
     appendFilePath: true # to append file path to Edit link
 
-  # for search
-  # https://fusejs.io/api/options.html
+  # label:
+  #     text: "Home"
+  #     icon: icon.png
+  #     iconHeight: 35
+
+  # analytics:
+  #     google:
+  #         SiteVerificationTag: "XYZabc"
+
+  assets:
+    disableHLJS: true
+  #     favicon: "<link / abs url>"
+  #     favicon16x16: "<link / abs url>"
+  #     favicon32x32: "<link / abs url>"
+  #     apple_touch_icon: "<link / abs url>"
+  #     safari_pinned_tab: "<link / abs url>"
+
+  # cover:
+  #     hidden: true # hide everywhere but not in structured data
+  #     hiddenInList: true # hide on list pages and home
+  #     hiddenInSingle: true # hide on single page
+
   fuseOpts:
     isCaseSensitive: false
     shouldSort: true
@@ -118,27 +123,11 @@ params:
     threshold: 0.4
     minMatchCharLength: 0
     keys: ["title", "permalink", "summary", "content"]
-menu:
-  main:
-    - identifier: categories
-      name: categories
-      url: /categories/
-      weight: 10
-    - identifier: Search
-      name: Search
-      url: search/
-      weight: 1
-    - identifier: tags
-      name: tags
-      url: /tags/
-      weight: 20
-    - identifier: "About Me"
-      name: Me
-      url: https://ar0177417.netlify.app
-      weight: 30
-# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
-pygmentsUseClasses: true
+
 markup:
+  goldmark:
+    renderer:
+      unsafe: true
   highlight:
     noClasses: false
     # anchorLineNos: true
@@ -146,3 +135,27 @@ markup:
     # guessSyntax: true
     # lineNos: true
     # style: monokai
+
+privacy:
+  vimeo:
+    disabled: false
+    simple: true
+
+  twitter:
+    disabled: false
+    enableDNT: true
+    simple: true
+
+  instagram:
+    disabled: false
+    simple: true
+
+  youtube:
+    disabled: false
+    privacyEnhanced: true
+
+services:
+  instagram:
+    disableInlineCSS: true
+  twitter:
+    disableInlineCSS: true
