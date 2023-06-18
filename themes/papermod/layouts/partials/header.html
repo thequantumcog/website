@@ -95,7 +95,7 @@
                     </svg>
                 </button>
                 {{- end }}
-                
+
 
                 {{- $lang := .Lang}}
                 {{- $separator := or $label_text (not site.Params.disableThemeToggle)}}
@@ -120,10 +120,6 @@
                 {{- end }}
             </div>
         </div>
-        <div class="search">
-            <input type="text" placeholder="Search..">
-        </div>
-        
         {{- $currentPage := . }}
         <ul id="menu">
             {{- range site.Menus.main }}
