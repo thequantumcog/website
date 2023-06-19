@@ -1,4 +1,4 @@
-baseURL: "https://thereasonablesolution.netlify.app" # if your site is in 'https', then make sure your base url isn't written using 'http' otherwise your sitemap would contain http (as opposeed to https) URLs. This would affect Google indexing of your URLs.
+baseURL: "https://theedgeblog.netlify.app" # if your site is in 'https', then make sure your base url isn't written using 'http' otherwise your sitemap would contain http (as opposeed to https) URLs. This would affect Google indexing of your URLs.
 title: The Reasonable Solution
 paginate: 5
 theme: papermod
@@ -44,7 +44,7 @@ outputs:
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema. set to production
-  title: "The Reasonable Solution"
+  title: "The Edge"
   description: "Website from a passionate blogger and a linux nerd"
   author: ar0177417
   # author: ["Me", "You"] # multiple authors
