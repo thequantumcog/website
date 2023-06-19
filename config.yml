@@ -43,7 +43,7 @@ outputs:
     - JSON
 
 params:
-  env: development # to enable google analytics, opengraph, twitter-cards and schema. set to production
+  env: production # to enable google analytics, opengraph, twitter-cards and schema. set to production
   title: "The Reasonable Solution"
   description: "Website from a passionate blogger and a linux nerd"
   author: ar0177417
@@ -89,7 +89,7 @@ params:
       url: "index.xml"
 
   editPost:
-    URL: "https://github.com/ardrag0n/website/content"
+    URL: "https://github.com/ardrag0n/website/tree/content"
     Text: "Suggest Changes" # edit text
     appendFilePath: true # to append file path to Edit link
 
