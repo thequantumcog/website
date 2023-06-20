@@ -32,7 +32,8 @@ menu:
       weight: 10
     - name: Tags
       url: tags/
-      weight: 10
+      weight:
+        10
         #  - name: About Me
         # url: https://ar0177417.netlify.app
 
@@ -48,7 +49,6 @@ params:
   description: "Website from a passionate blogger and a linux nerd"
   author: ar0177417
   # author: ["Me", "You"] # multiple authors
-
   defaultTheme: auto
   # disableThemeToggle: true
   ShowShareButtons: true
