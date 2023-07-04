@@ -1,5 +1,5 @@
 ---
-title: "Pacman is way better Package Manager"
+title: "Pacman is a way better Package Manager"
 date: 2023-07-04T13:06:37+05:00
 showToc: true
 TocOpen: false
