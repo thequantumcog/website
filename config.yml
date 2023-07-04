@@ -44,6 +44,7 @@ outputs:
     - JSON
 
 params:
+  #laber.icon: logo.png
   env: production # to enable google analytics, opengraph, twitter-cards and schema. set to production
   title: "The Edge"
   description: "Website from a passionate blogger and a linux nerd"
@@ -93,10 +94,10 @@ params:
     Text: "Suggest Changes" # edit text
     appendFilePath: true # to append file path to Edit link
 
-  # label:
-  #     text: "Home"
-  #     icon: icon.png
-  #     iconHeight: 35
+  label:
+    text: " "
+    icon: logo.svg
+    iconHeight: 35
 
   # analytics:
   #     google:
@@ -104,7 +105,7 @@ params:
 
   assets:
     disableHLJS: true
-  #     favicon: "<link / abs url>"
+    favicon: "/logo.png"
   #     favicon16x16: "<link / abs url>"
   #     favicon32x32: "<link / abs url>"
   #     apple_touch_icon: "<link / abs url>"
