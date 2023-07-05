@@ -26,9 +26,15 @@ cover:
 draft: false
 ---
 I was trying to edit /etc/pam.d and fixing elogind on my Artix Installation that I messed up my pam.d directory. On almost every other distro, I have to _reinstall_ the distro to fix this. But on Arch Based Distro, You can check which files are owned by which package. Then by using this information, you can regenerate any directory by reinstalling the package.
-## Command
+## Bash Command
 You can regenerate directory by using the following Command:
 
 `pacman -S $(pacman -Ql | grep /etc/pam.d/$ | awk '{print $1}')`
+
+## Fish Command
+For Fish Shell you can use the following
+
+`pacman -S (pacman -Ql | grep /etc/pam.d/\$ | awk '{print $1}')`
+
 
 This is very useful specially for rolling and bleeding edge distros. Using this you can regenerate directories. If you want regenerate a specific files just substitute `/etc/pam.d/$` with the name of file.
