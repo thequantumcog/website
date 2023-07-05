@@ -1,11 +1,11 @@
 ---
-title: "Pacman is a way better Package Manager"
+title: "Regenerating messed up directories using Pacman"
 date: 2023-07-04T13:06:37+05:00
 showToc: true
 TocOpen: false
 hidemeta: false
 comments: false
-description: "Desc Text."
+description: "Is pacman superior?"
 disableHLJS: true # to disable highlightjs
 disableShare: false
 disableHLJS: false
@@ -26,13 +26,13 @@ cover:
 draft: false
 ---
 I was trying to edit /etc/pam.d and fixing elogind on my Artix Installation that I messed up my pam.d directory. On almost every other distro, I have to _reinstall_ the distro to fix this. But on Arch Based Distro, You can check which files are owned by which package. Then by using this information, you can regenerate any directory by reinstalling the package.
-## Bash Command
 You can regenerate directory by using the following Command:
+### For Bash Shell
 
 `pacman -S $(pacman -Ql | grep /etc/pam.d/$ | awk '{print $1}')`
 
-## Fish Command
-For Fish Shell you can use the following
+
+### For Fish Shell
 
 `pacman -S (pacman -Ql | grep /etc/pam.d/\$ | awk '{print $1}')`
 
