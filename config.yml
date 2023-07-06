@@ -79,9 +79,8 @@ params:
         url: tags
 
   homeInfoParams:
-    Title: "Hi there \U0001F44B"
-    Content: Welcome to my blog
-
+    Title: "Hey There, \U0001F44B"
+    Content: This website is my Journal so that I don't forget important fixes and interesting information.
   socialIcons:
     - name: github
       url: "https://github.com/ardrag0n"
