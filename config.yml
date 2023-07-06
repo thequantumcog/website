@@ -1,5 +1,5 @@
-baseURL: "https://theedgeblog.netlify.app" # if your site is in 'https', then make sure your base url isn't written using 'http' otherwise your sitemap would contain http (as opposeed to https) URLs. This would affect Google indexing of your URLs.
-title: The Edge
+baseURL: "https://thebrink.netlify.app" # if your site is in 'https', then make sure your base url isn't written using 'http' otherwise your sitemap would contain http (as opposeed to https) URLs. This would affect Google indexing of your URLs.
+title: The Brink
 paginate: 5
 theme: papermod
 
@@ -46,7 +46,7 @@ outputs:
 params:
   #laber.icon: logo.png
   env: production # to enable google analytics, opengraph, twitter-cards and schema. set to production
-  title: "The Edge"
+  title: "The Brink"
   description: "Website from a passionate blogger and a linux nerd"
   author: ar0177417
   # author: ["Me", "You"] # multiple authors
