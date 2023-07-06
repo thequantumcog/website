@@ -80,7 +80,7 @@ params:
 
   homeInfoParams:
     Title: "Hey There, \U0001F44B"
-    Content: This website is my Journal so that I don't forget important fixes and interesting information.
+    Content: This website is my Journal/Blog so that I don't forget important fixes and useful information.
   socialIcons:
     - name: github
       url: "https://github.com/ardrag0n"
