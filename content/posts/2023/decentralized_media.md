@@ -27,7 +27,7 @@ draft: false
 ---
 
 Social Media has changed drastically over the years. Only a few years back, the internet doesn't used to be this bad. Nowadays, Social Media Companys chnages their policies every full moon. In this messy age of technology, it might be better with decentralized social media.
-Decentralized social media apps and website are gaining traction especially because of recent policy changes of social media apps such as Reddit and Twitter. Last Year, Twitter was accuired by Elon Musk and he changed the api policies and raised api prices and basically shutting off every third party apps. Similarly, Reddit also increased its Api prices and now users are furious over traditional social media
+Decentralized social media apps and website are gaining traction especially because of recent policy changes of social media apps such as Reddit and Twitter. Last Year, Twitter was accuired by Elon Musk and he changed the API policies and raised api prices and basically shutting off every third party apps. Similarly, Reddit also increased its Api prices and now users are furious over traditional social media
 Decentralized Social Media such as _Mastodon, Lemmy and Kbin_ are now gaining popularity.
 
 ## Advanatges
