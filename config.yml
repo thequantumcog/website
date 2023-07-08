@@ -99,9 +99,9 @@ params:
     icon: logo.svg
     iconHeight: 35
 
-  # analytics:
-  #     google:
-  #         SiteVerificationTag: "XYZabc"
+  analytics:
+    google:
+      SiteVerificationTag: "JHws0ngpf3DJxJ4K89UzYkFlZP4btEK0bTn6U7QbYdY"
 
   assets:
     disableHLJS: true
