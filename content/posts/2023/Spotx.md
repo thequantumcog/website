@@ -2,7 +2,12 @@
 title: "SpotX: The Spotify Adblocker You've Been Waiting For"
 date: 2023-01-04T13:05:38+05:00
 url: /spotx/
-image: images/2023/spotx.png
+# cover:
+#      image: "images/2023/spotx.png" # image path/url
+#      alt: "<alt text>" # alt text
+#      caption: "<text>" # display caption under cover
+#      relative: false # when using page bundles set this to true
+#      hidden: true # only hide on current single page
 draft: false
 
 ---
