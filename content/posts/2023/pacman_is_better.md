@@ -17,12 +17,12 @@ ShowPostNavLinks: true
 ShowWordCount: true
 ShowRssButtonInSectionTermList: true
 UseHugoToc: true
-cover:
-    image: "<image path/url>" # image path/url
-    alt: "<alt text>" # alt text
-    caption: "<text>" # display caption under cover
-    relative: false # when using page bundles set this to true
-    hidden: true # only hide on current single page
+# cover:
+#     image: "<image path/url>" # image path/url
+#     alt: "<alt text>" # alt text
+#     caption: "<text>" # display caption under cover
+#     relative: false # when using page bundles set this to true
+#     hidden: true # only hide on current single page
 draft: false
 ---
 I was trying to edit /etc/pam.d and fix elogind on my Artix Installation. Unfortunately, It went badly and I messed up my pam.d directory.However, I Found a Fix. In pacman, It is very easy to check files owned by packages. So, We can simply generate a list of packages which have files in pam.d and reinstall them.

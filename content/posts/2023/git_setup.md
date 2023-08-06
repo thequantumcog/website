@@ -3,12 +3,12 @@ title: "Setting Git Global Configs"
 date: 2023-08-06T15:18:17+05:00
 description: "Save your time by setting git global configs"
 disableHLJS: false
-cover:
-    image: "<image path/url>"
-    alt: "<alt text>"
-    caption: "<text>"
-    relative: false # when using page bundles set this to true
-    hidden: true # only hide on current single page
+# cover:
+#     image: "<image path/url>"
+#     alt: "<alt text>"
+#     caption: "<text>"
+#     relative: false # when using page bundles set this to true
+#     hidden: true # only hide on current single page
 draft: false
 
 ---
