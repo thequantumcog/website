@@ -54,14 +54,23 @@ params:
   # disableThemeToggle: true
   ShowFullTextinRSS: true
   ShowShareButtons: true
+  disableShare: false
   ShowReadingTime: true
   # disableSpecial1stPost: true
+  hidemeta: false
+  comments: false
   displayFullLangName: true
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: true
+  ShowWordCount: true
+  hideSummary: false
   ShowRssButtonInSectionTermList: true
   ShowToc: true
+  TocOpen: false
+  ShowBreadCrumbs: true
+  UseHugoToc: true
+  ShowCodeCopyButtons: true
   # comments: false
   # images: ["papermod-cover.png"]
 
