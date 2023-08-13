@@ -7,7 +7,7 @@ paginate: 5
 theme: papermod
 enableRobotsTXT: true
 languageCode: "en-us"
-canonifyURLs:true
+canonifyURLs: true
 enableInlineShortcodes: true
 enableRobotsTXT: true
 buildDrafts: false
