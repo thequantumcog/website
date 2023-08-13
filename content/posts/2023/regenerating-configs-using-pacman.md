@@ -1,5 +1,5 @@
 ---
-title: "Effortless Directory Regeneration Using Pacman: A Quick Fix Guide"
+title: "Effortless Directory Regeneration Using Pacman"
 date: 2023-07-04T13:06:37+05:00
 showToc: true
 TocOpen: false
