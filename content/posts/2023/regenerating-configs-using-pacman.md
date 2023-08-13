@@ -5,7 +5,7 @@ showToc: true
 TocOpen: false
 hidemeta: false
 comments: false
-description: "Learn how to effortlessly restore your system's /etc/pam.d directory using Pacman in this quick and practical guide. Fix mishaps caused while editing configurations with easy-to-follow steps. Master directory regeneration for Linux distros with our Pacman-powered solution."
+#description: "Learn how to effortlessly restore your system's /etc/pam.d directory using Pacman in this quick and practical guide. Fix mishaps caused while editing configurations with easy-to-follow steps. Master directory regeneration for Linux distros with our Pacman-powered solution."
 disableHLJS: true # to disable highlightjs
 disableShare: false
 disableHLJS: false
