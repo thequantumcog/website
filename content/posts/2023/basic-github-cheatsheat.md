@@ -1,9 +1,8 @@
 ---
-title: "{{ replace .Name "-" " " | title }}"
-date: {{ .Date }}
+title: "Basic Github Cheatsheat"
+date: 2023-08-13T18:12:39+05:00
 #description: "Desc Text."
 disableHLJS: false
-#ShowToc: true
 # cover:
 #     image: "<image path/url>"
 #     alt: "<alt text>"

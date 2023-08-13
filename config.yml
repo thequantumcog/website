@@ -72,7 +72,7 @@ params:
   ShowWordCount: true
   hideSummary: false
   ShowRssButtonInSectionTermList: true
-  ShowToc: true
+    #ShowToc: true
   TocOpen: false
   ShowBreadCrumbs: true
   UseHugoToc: true
