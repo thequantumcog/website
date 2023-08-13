@@ -1,4 +1,7 @@
 baseURL: "https://thebrink.netlify.app" # if your site is in 'https', then make sure your base url isn't written using 'http' otherwise your sitemap would contain http (as opposeed to https) URLs. This would affect Google indexing of your URLs.
+sitemap:
+  changefreq: weekly
+  priority: 0.8
 title: The Brink
 paginate: 5
 theme: papermod
@@ -114,11 +117,11 @@ params:
 
   assets:
     disableHLJS: true
-    favicon: "favicons/favicon.ico"
-    favicon16x16: "favicons/favicon-16x16.png"
-    favicon32x32: "favicons/favicon-32x32.png"
-    apple_touch_icon: "favicons/apple-touch-icon.png"
-    safari_pinned_tab: "favicons/apple-touch-icon.png"
+    favicon: "favicon.ico"
+    favicon16x16: "favicon-16x16.png"
+    favicon32x32: "favicon-32x32.png"
+    apple_touch_icon: "apple-touch-icon.png"
+    safari_pinned_tab: "apple-touch-icon.png"
 
   # cover:
   #     hidden: true # hide everywhere but not in structured data
