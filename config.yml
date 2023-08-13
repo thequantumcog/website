@@ -95,7 +95,7 @@ params:
 
   homeInfoParams:
     Title: "Hey There, \U0001F44B"
-    Content: This website is my Journal for noting useful information and expressing my views.
+    Content: This website is my Journal for noting useful information and expressing my views.I am passionate for all things Linux, from quirky hobby distros to fine-tuning servers, drives my articles. Join me on this exciting journey of unraveling the intricacies of the Linux world. Let's dive into the realm of operating systems, one command at a time
   socialIcons:
     - name: github
       url: "https://github.com/ardrag0n"
