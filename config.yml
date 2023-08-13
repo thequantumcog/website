@@ -52,7 +52,7 @@ params:
   #laber.icon: logo.png
   env: production # to enable google analytics, opengraph, twitter-cards and schema. set to production
   title: "The Brink"
-  description: "Website from a passionate blogger and a linux nerd"
+  description: "I am passionate for all things Linux, from quirky hobby distros to fine-tuning servers, drives my articles. Join me on this exciting journey of unraveling the intricacies of the Linux world. Let's dive into the realm of operating systems, one command at a time"
   author: ar0177417
   keywords: ["tech","Brink","The Brink","Brink Blog","ardrag0n","ar0177417","Ahmad Rehan"]
   # author: ["Me", "You"] # multiple authors
