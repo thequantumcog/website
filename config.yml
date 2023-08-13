@@ -6,7 +6,7 @@ title: The Brink
 paginate: 5
 theme: papermod
 enableRobotsTXT: true
-
+canonifyURLs:true
 enableInlineShortcodes: true
 enableRobotsTXT: true
 buildDrafts: false
