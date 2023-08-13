@@ -105,7 +105,7 @@ params:
 
   label:
     text: " "
-    icon: logo.svg
+    icon: /images/logo-light.webp
     iconHeight: 35
 
   analytics:
