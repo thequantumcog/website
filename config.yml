@@ -2,7 +2,7 @@ baseURL: "https://thebrink.netlify.app" # if your site is in 'https', then make 
 sitemap:
   changefreq: weekly
   priority: 0.8
-title: The Brink
+title: The Brink || Tech Journal
 paginate: 5
 theme: papermod
 enableRobotsTXT: true
