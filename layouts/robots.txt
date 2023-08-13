@@ -1,4 +1,0 @@
-User-agent: *
-Disallow: /nogooglebot/
-{{- end }}
-Sitemap: {{ "sitemap.xml" | absURL }}
