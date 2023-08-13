@@ -1,11 +1,11 @@
 ---
-title: "Regenerating a Directory using Pacman"
+title: "Effortless Directory Regeneration Using Pacman: A Quick Fix Guide"
 date: 2023-07-04T13:06:37+05:00
 showToc: true
 TocOpen: false
 hidemeta: false
 comments: false
-description: "Is pacman superior?"
+description: "Learn how to effortlessly restore your system's /etc/pam.d directory using Pacman in this quick and practical guide. Fix mishaps caused while editing configurations with easy-to-follow steps. Master directory regeneration for Linux distros with our Pacman-powered solution."
 disableHLJS: true # to disable highlightjs
 disableShare: false
 disableHLJS: false
