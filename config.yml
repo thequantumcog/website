@@ -5,6 +5,7 @@ sitemap:
 title: The Brink
 paginate: 5
 theme: papermod
+enableRobotsTXT: true
 
 enableInlineShortcodes: true
 enableRobotsTXT: true
@@ -52,6 +53,7 @@ params:
   title: "The Brink"
   description: "Website from a passionate blogger and a linux nerd"
   author: ar0177417
+  keywords: ["tech","Brink","The Brink","Brink Blog","ardrag0n","ar0177417","Ahmad Rehan"]
   # author: ["Me", "You"] # multiple authors
   defaultTheme: auto
   # disableThemeToggle: true
