@@ -1,7 +1,7 @@
 ---
 title: "Effortless Directory Regeneration Using Pacman"
 date: 2023-07-04T13:06:37+05:00
-showToc: true
+showToc: false
 TocOpen: false
 hidemeta: false
 comments: false
@@ -17,6 +17,12 @@ ShowPostNavLinks: true
 ShowWordCount: true
 ShowRssButtonInSectionTermList: true
 UseHugoToc: true
+tags:
+    - Linux
+    - Arch Linux
+    - SysOps
+categories:
+    - Linux
 # cover:
 #     image: "<image path/url>" # image path/url
 #     alt: "<alt text>" # alt text
