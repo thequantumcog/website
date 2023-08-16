@@ -32,6 +32,11 @@ This is particularly useful in merge conflicts and syncing forks.
 * `git stash drop` for dropping changes
 * `git stash apply` for applying changes
 * `git stash pop` for `git stash apply + drop`
+# Reverting Commit
+* `git reset --hard HEAD~n` (Doesn't retain uncommited changes)
+* `git reset --soft HEAD~n` (Retains uncommited Changes)
+where n is the number of commits to be reverted.
+
 For Further commands see this [cheatsheat](https://gist.github.com/Preethi-Dev/fa8ae46a75761356dc1fa711376c8345)
 
 
