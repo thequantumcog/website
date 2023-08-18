@@ -1,0 +1,151 @@
+title: The Brink || Tech Journal
+baseURL: "https://thebrink.netlify.app"
+theme: hugo-PaperModX
+
+paginate: 5
+languageCode: "en-us"
+enableInlineShortcodes: true
+enableRobotsTXT: true
+enableEmoji: true
+canonifyURLs: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+minify:
+  disableXML: true
+taxonomies:
+  category: categories
+  tag: tags
+  series: series
+
+params:
+  #env: production
+  description: "I am passionate for all things Linux, from quirky hobby distros to fine-tuning servers, drives my articles. Join me on this exciting journey of unraveling the intricacies of the Linux world. Let's dive into the realm of operating systems, one command at a time"
+  author: ar0177417
+  keywords: ["tech","Brink","The Brink","Brink Blog","ardrag0n","ar0177417","Ahmad Rehan"]
+  defaultTheme: auto
+    #label:
+    #icon: images/logo-light.webp
+    #iconHeight: 35
+    #images:
+    #- cover.png
+    #favicon: /favicon.ico
+  logo:
+    icon: images/logo-light.webp
+    iconHeight: 35
+  DateFormat: "January 02, 2006"
+  useCustomAnalytics: true
+    #mainSections:
+    #- posts
+  # theme params
+  DisableLanguageSwitch: true
+  TocOpen: true
+  TocSide: right
+  EnableInstantClick: false
+  EnableImageZoom: true
+  ShowShareButtons: true
+  disableShare: false
+    #ShareButtons:
+    #- twitter
+    #- telegram
+  ShowReadingTime: true
+  ShowWordCount: true
+  ShowCodeCopyButtons: true
+  ShowPostNavLinks: true
+    #Email: hello@example.com
+
+    #  socialAccounts:
+    #    twitter:
+    #      username: novoreorx
+  assets:
+    favicon: "favicon.ico"
+    favicon16x16: "favicon-16x16.png"
+    favicon32x32: "favicon-32x32.png"
+    apple_touch_icon: "apple-touch-icon.png"
+    safari_pinned_tab: "apple-touch-icon.png"
+  homeInfoParams:
+    Title: "Hey There, \U0001F44B"
+    Content: This website is my Journal for noting useful information and expressing my views.I am passionate for all things Linux, from quirky hobby distros to fine-tuning servers, drives my articles. Join me on this exciting journey of unraveling the intricacies of the Linux world. Let's dive into the realm of operating systems, one command at a time
+
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+
+  socialIcons:
+    - name: github
+      url: "https://github.com/ardrag0n"
+    - name: Twitter
+      url: "https://twitter.com/ar0177417"
+    - name: Rss
+      url: "feed.xml"
+
+
+  #commentSystems:
+  #  disqus:
+  #    shortname: reorx
+  #  remark42:
+  #    url: https://remark42.reorx.com
+  #    site: reorx.github.io
+  #  telegramWidget:
+  #    channel: reorx_share
+  #    accentColor: "9077e1"
+  #    limit: 20
+  #defaultCommentSystems:
+  #  remark42: true
+
+      #permalinks:
+      #notes: /:section/:year/:month/:slugorfilename
+
+# prefer feed.xml rather than index.xml
+outputFormats:
+  RSS:
+    mediatype: "application/rss"
+    baseName: "feed"
+  JSON:
+
+outputs:
+  home:
+    - HTML
+    - JSON
+
+menu:
+  main:
+    #- name: Posts
+    # url: /posts/
+    # weight: 1
+    - name: Search
+      url: search/
+      weight: 1
+    - name: Tags
+      url: tags/
+      weight: 5
+        #- name: Notes
+        #url: /notes/
+        #weight: 2
+        #- name: Newsletter
+        #url: /newsletter/
+        #weight: 3
+    - name: Archives
+      url: /archives/
+      weight: 4
+
+languages:
+  en:
+    languageName: "English"
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    style: dracula
+    lineNos: false
+    noClasses: false
+
+
