@@ -9,3 +9,6 @@ button#theme-toggle {
     font-size: 32px;
     margin: auto 16px;
 }
+.entry-header {
+    margin: unset;
+}
