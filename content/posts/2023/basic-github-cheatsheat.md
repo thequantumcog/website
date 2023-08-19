@@ -18,21 +18,21 @@ Git is a very powerful version control and a project managing tool. Every dev ha
 * `git commit` to commit changes
 * `git push` to publish changes to remote
 * `git status` to check status of git repo including staged and unstaged changes
-# Branches
+## Branches
 You can use branches for making a copy of repo, implementing a feature and then merging it back to main branch
 * `git branch` is used for listing all branches
 * `git branch <branch_name>` is used for creating new branch
 * `git branch -d <branch_name>` is used for deleting a branch
 * `git checkout <branch_name>` to switch to new branch
 * `git merge <merge_into_this>` to merge currently checked out branch to some other branch
-# Stashes
+## Stashes
 The `git stash` command takes your uncommitted changes (both staged and unstaged), saves them away for later use, and then reverts them from your working copy.
 This is particularly useful in merge conflicts and syncing forks.
 * `git stash list` shows all stashes
 * `git stash drop` for dropping changes
 * `git stash apply` for applying changes
 * `git stash pop` for `git stash apply + drop`
-# Reverting Commit
+## Reverting Commit
 * `git reset --hard HEAD~n` (Doesn't retain uncommited changes)
 * `git reset --soft HEAD~n` (Retains uncommited Changes)
 where n is the number of commits to be reverted.
