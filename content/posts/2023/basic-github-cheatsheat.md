@@ -38,5 +38,4 @@ This is particularly useful in merge conflicts and syncing forks.
 where n is the number of commits to be reverted.
 
 For Further commands see this [cheatsheat](https://gist.github.com/Preethi-Dev/fa8ae46a75761356dc1fa711376c8345)
-
-
+{{< youtube ecK3EnyGD8o >}}
