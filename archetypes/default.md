@@ -2,8 +2,6 @@
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
 #description: "Desc Text."
-disableHLJS: false
-#ShowToc: true
 # cover:
 #     image: "<image path/url>"
 #     alt: "<alt text>"
