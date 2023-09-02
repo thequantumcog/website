@@ -9,7 +9,10 @@ url: /spotx/
 #      relative: false # when using page bundles set this to true
 #      hidden: true # only hide on current single page
 draft: false
-
+tags:
+    - General
+    - Linux
+    - Windows
 ---
 ![Spotx Image](/images/2023/spotx.png)
 *Are you tired of constantly being interrupted by ads while listening to your favorite music on Spotify?* If so, you're in luck! Introducing SpotX, the Spotify ad blocker that will revolutionize the way you listen to music.

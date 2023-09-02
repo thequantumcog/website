@@ -10,6 +10,10 @@ disableHLJS: false
 #     relative: false # when using page bundles set this to true
 #     hidden: true # only hide on current single page
 draft: false
+tags:
+    - Linux
+    - Git
+    - SysOps
 
 ---
 Git is an important tool that every developer and even non-developers use to manage versions and handling conflicts of files. Below are some settings that I set globally for my git repos.

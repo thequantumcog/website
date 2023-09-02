@@ -10,6 +10,10 @@ disableHLJS: false
 #     relative: false # when using page bundles set this to true
 #     hidden: true # only hide on current single page
 draft: false
+tags:
+    - SysOps
+    - Linux
+    - Git
 ---
 Git is a very powerful version control and a project managing tool. Every dev has to use git for projects. Below is my git cheatsheat. Below are some basic commands and some settings every developer should know
 ## Basics

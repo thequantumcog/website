@@ -24,6 +24,9 @@ UseHugoToc: true
 #     relative: false # when using page bundles set this to true
 #     hidden: true # only hide on current single page
 draft: false
+tags:
+    - Rants
+    - Opinion
 ---
 
 Social Media has changed drastically over the years. Only a few years back, the internet doesn't used to be this bad. Nowadays, Social Media Companys chnages their policies every full moon. In this messy age of technology, it might be better with decentralized social media.
