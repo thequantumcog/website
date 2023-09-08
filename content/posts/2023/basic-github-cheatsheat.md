@@ -40,6 +40,12 @@ This is particularly useful in merge conflicts and syncing forks.
 * `git reset --hard HEAD~n` (Doesn't retain uncommited changes)
 * `git reset --soft HEAD~n` (Retains uncommited Changes)
 where n is the number of commits to be reverted.
+## Git Configs
+You can also use git configs to create your own shortcuts and much more. The one git setting I always use is
+* Auto Setting push remote
+```
+git config --global --add --bool push.autoSetupRemote true
+```
 
 For Further commands see this [cheatsheat](https://gist.github.com/Preethi-Dev/fa8ae46a75761356dc1fa711376c8345)
 {{< youtube ecK3EnyGD8o >}}
