@@ -8,6 +8,8 @@ description: "For One Click Boot"
 #     caption: "<text>"
 #     relative: false # when using page bundles set this to true
 #     hidden: true # only hide on current single page
+tags:
+    - Linux
 draft: false
 ---
 Autologin is generally not recommended for a laptop but if you want to set it up for your computer for one click boot experience you can do it.
