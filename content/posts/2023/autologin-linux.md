@@ -1,7 +1,7 @@
 ---
 title: "Autologin Linux"
 date: 2023-09-09T08:45:55+05:00
-#description: "Desc Text."
+description: "For One Click Boot"
 # cover:
 #     image: "<image path/url>"
 #     alt: "<alt text>"
