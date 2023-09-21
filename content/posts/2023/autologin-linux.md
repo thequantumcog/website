@@ -2,6 +2,7 @@
 title: "Autologin Linux"
 date: 2023-09-09T08:45:55+05:00
 description: "For One Click Boot"
+url: /autologin-linux
 # cover:
 #     image: "<image path/url>"
 #     alt: "<alt text>"

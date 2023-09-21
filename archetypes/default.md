@@ -1,7 +1,8 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
-#description: "Desc Text."
+description: "Desc Text."
+url: "/{{ .Name | lower }}/"
 # cover:
 #     image: "<image path/url>"
 #     alt: "<alt text>"

@@ -1,5 +1,5 @@
 ---
-title: "Random Useful Information Thread"
+title: "Directly Stream mega.nz video"
 date: 2023-09-09T09:14:45+05:00
 description: ""
 # cover:
@@ -10,7 +10,6 @@ description: ""
 #     hidden: true # only hide on current single page
 draft: false
 ---
-## Directly Stream mega.nz video
 ```
 megatools dl "https://mega.nz/#hashvideo" --path - | mpv -
 ```

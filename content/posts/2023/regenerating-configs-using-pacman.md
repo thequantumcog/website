@@ -1,6 +1,7 @@
 ---
 title: "Effortless Directory Regeneration Using Pacman"
 date: 2023-07-04T13:06:37+05:00
+url: /regenerating-configs-using-pacman/
 showToc: true
 TocOpen: true
 hidemeta: false
