@@ -16,6 +16,7 @@ draft: false
 Autologin is generally not recommended for a laptop but if you want to set it up for your computer for one click boot experience you can do it.
 
 ## Configuring TTY
+* Replace ar0177417 with your username
 
 ```
 /sbin/agetty -n -N -i -a ar0177417 tty1 38400 linux

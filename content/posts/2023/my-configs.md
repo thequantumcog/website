@@ -9,6 +9,9 @@ description: "All my configs and fixes in one place"
 #     relative: false # when using page bundles set this to true
 #     hidden: true # only hide on current single page
 draft: false
+tags:
+    - Linux
+    - Configs
 weight: 1
 ---
 ## Linux
