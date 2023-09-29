@@ -18,3 +18,6 @@ weight: 1
 * <a href="/autologin-linux/" target="_blank">One Click Boot</a>
 * <a href="/regenerating-configs-using-pacman/" target="_blank">Regenerating Config Files on Arch</a>
 * <a href="/spotx" target="_blank">Spotify Adblock</a>
+
+## Android
+* <a href="/android-tweaks/" target="_blank">Android Tweaks</a>

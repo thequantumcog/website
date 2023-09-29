@@ -8,7 +8,11 @@ description: "Making a Real SmartTV"
 #     caption: "<text>"
 #     relative: false # when using page bundles set this to true
 #     hidden: true # only hide on current single page
+tags:
+    - Rant
 draft: true
 ---
-SmartTV have Trash Interface, lag a lot and have fewer features yet they are expensive at the same time. The best way to build your own SmartTV is build your own better one is to use a raspberry PI attach an LED display with it. Options are limitless here. You can install Kodi, Plex or use some other solution. For this gu:wq
+## The Problem
+Televisions were simple back in the day, you just pressed a button and a channel played. If you want to watch your sfavourite show, you would have to wait for its time slot and watch it with ads. Now Television have been transformed into "SmartTV". It can do a lot more than display your traditional display but at the same time it has also become a lot slow and expensive.
+## My Opinion
 
