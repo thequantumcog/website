@@ -11,6 +11,10 @@ url: "/customizing-a-prebuilt-rom/"
 #     hidden: true # only hide on current single page
 draft: true
 ---
+* Get system.img and boot.img by dumping using adb or fastboot, or from rom.zip
+* Mount system.img
 ```
 fuse2fs -o fakeroot,ro system.img <target>
 ```
+* Make Changes
+* convert to flashable zip
