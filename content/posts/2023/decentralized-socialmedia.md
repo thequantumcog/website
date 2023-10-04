@@ -25,7 +25,7 @@ UseHugoToc: true
 #     hidden: true # only hide on current single page
 draft: false
 tags:
-    - Rants
+    - Rant
     - Opinion
 ---
 
