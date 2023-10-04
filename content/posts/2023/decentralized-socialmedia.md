@@ -26,7 +26,6 @@ UseHugoToc: true
 draft: false
 tags:
     - Rant
-    - Opinion
 ---
 
 Social Media has changed drastically over the years. Only a few years back, the internet doesn't used to be this bad. Nowadays, Social Media Companies change their policies every full moon. In this messy age of technology, it might be better to use decentralized social media.
