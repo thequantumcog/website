@@ -1,6 +1,6 @@
 ---
 title: "Optimizing Linux Boot Time"
-date: 2023-10-03T19:35:10+05:00
+date: 2023-10-05T17:35:10+05:00
 description: "Boot your Linux Machine instantly"
 url: "/optimizing-boot-time/"
 # cover:
@@ -13,7 +13,7 @@ series:
     - Optimizing Your Linux System
 tags:
     - Linux
-draft: true
+draft: false
 ---
 Boot time is how much time it takes to boot your computer when you press your power button. A lot of things can slow down your boot on Linux. In this article we will discuss this in detail.
 
@@ -32,13 +32,16 @@ Use `autodetect` hook for initramfs which auto detects the require hooks
 #### Using lz4 compression
 lz4 compression is slightly faster than zstd or gzip compressions. You can change this in `/etc/mkinitcpio.conf` 
 ### Switch to Dracut
+Dracut can generate unified kernel images with smaller size if configured correctly. This allows faster kernel loading.
 
 ## Using Alternative Init System <font size="2">(Not recommended for beginners)</font>
-* Use init manager other than systemd
+Systemd started as an init manager but now has absorbed many services and processes. Other init systems such as runit,dinit,s6,etc. are much lighter and allows much faster boot time than systemd
 ## Disable Splash
-* Disable Bios Splash
-* Disable Plymouth Splash
+ Disabling **Bios Splash and Plymouth Splash** can also speed up the boot because splash adds a delay in boot
 ## Disable Terminal Output
 On some fast systems using SSDs, The tty could also be a bottlneck meaning lesser the terminal output faster will be the boot.
 ## Staggered Spin-up on HDD
-
+On HDDs staggered spin can also be a problem but it can be fixed by checking dmesg output,i.e, `sudo dmesg | grep SSS`.\
+If there is output of this command, then add `libahci.ignore_sss=1` to kernel parameters.
+## Conclusion
+This is barely scratching the surface in terms of optimization. You can always do some more optimization. Linux is already way faster than Windows and lighter in terms of resource usage. Then on top of that you can optimize it more to get **single digit boot times!**
