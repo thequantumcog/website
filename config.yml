@@ -6,7 +6,7 @@ paginate: 5
 languageCode: "en-us"
 enableInlineShortcodes: true
 enableRobotsTXT: true
-enableEmoji: true
+enableEmoji: false
 canonifyURLs: true
 buildDrafts: false
 buildFuture: false
