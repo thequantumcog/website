@@ -21,9 +21,9 @@ taxonomies:
 
 params:
   env: production
-  description: "I am passionate for quirky hobby distros to fine-tuning servers. Join me on this exciting journey of unraveling the intricacies of the Linux world. Let's dive into the realm of operating systems, one command at a time"
+  description: "I am passionate for quirky hobby distros to fine-tuning servers. Join me on this exciting journey of unraveling the intricacies of the Computer world. Let's dive into the realm of Technology, one command at a time"
   author: ar0177417
-  keywords: ["tech","Brink","The Brink","Brink Blog","ardrag0n","ar0177417","Ahmad Rehan"]
+  keywords: ["tech","Brink","The Brink","Brink Blog","ardrag0n","ar0177417","Ahmad Rehan","Linux","Windows","Servers"]
   defaultTheme: auto
     #label:
     #icon: images/logo-light.webp
@@ -67,7 +67,7 @@ params:
     safari_pinned_tab: "apple-touch-icon.png"
   homeInfoParams:
     Title: "Hey There, \U0001F44B"
-    Content: This website is my Journal for noting useful information and expressing my views.I am passionate for quirky hobby distros to fine-tuning servers. Join me on this exciting journey of unraveling the intricacies of the Linux world. Let's dive into the realm of operating systems, one command at a time
+    Content: This website is my Journal for noting useful information and expressing my views.I am passionate for quirky hobby distros to fine-tuning servers. Join me on this exciting journey of unraveling the intricacies of the Computer world. Let's dive into the realm of Technology, one command at a time.
 
   fuseOpts:
     isCaseSensitive: false
