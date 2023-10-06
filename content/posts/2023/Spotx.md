@@ -13,6 +13,9 @@ tags:
     - General
     - Linux
     - Windows
+categories:
+    - Linux
+    - Windows
 ---
 *Are you tired of constantly being interrupted by ads while listening to your favorite music on Spotify?* If so, you're in luck! Introducing SpotX, the Spotify ad blocker that will revolutionize the way you listen to music.\
 SpotX and BlockTheSpot are simple, lightweight tools that blocks all ads on Spotify, allowing you to enjoy uninterrupted music all day long. With SpotX, you no longer have to put up with annoying ads or pay for a premium subscription to get rid of them. Simply download the tool, run it, and you're good to go.
