@@ -9,6 +9,10 @@ url: "/shenanigan-free-windows-installation/"
 #     caption: "<text>"
 #     relative: false # when using page bundles set this to true
 #     hidden: true # only hide on current single page
+tags:
+    - Windows
+categories:
+    - Windows
 draft: false
 ---
 

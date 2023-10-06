@@ -13,6 +13,9 @@ series:
     - Optimizing Your Linux System
 tags:
     - Linux
+    - Optimizations
+categories:
+    - Linux
 draft: false
 ---
 Boot time is how much time it takes to boot your computer when you press your power button. A lot of things can slow down your boot on Linux. In this article we will discuss this in detail.

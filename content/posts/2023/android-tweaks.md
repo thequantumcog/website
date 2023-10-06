@@ -9,6 +9,11 @@ url: "/android-tweaks/"
 #     caption: "<text>"
 #     relative: false # when using page bundles set this to true
 #     hidden: true # only hide on current single page
+tags:
+    - Android
+    - Optimizations
+categories:
+    - Android
 draft: false
 ---
 ## Build.Prop Tweaks
