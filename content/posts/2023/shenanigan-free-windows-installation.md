@@ -74,7 +74,7 @@ ChrisTitus created an awesome debloat script. We can use this to debloat windows
 ```
 irm https://christitus.com/win | iex
 ```
-
+Also see:[this](https://github.com/massgravel/Microsoft-Activation-Scripts)
 ## Bypass OOBE For Windows 11
 
 The Out of Box Experience is changing all the time. The requirement to be online or only use a Microsoft account. Bypass it with this command and using `Shift+F10` to bring up the command prompt.  
