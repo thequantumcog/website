@@ -1,3 +1,4 @@
+/android https://raw.githubusercontent.com/ardrag0n/oneclick-android/master/start.sh 200
 http://www.thebrink.netlify.app/* https://thebrink.netlify.app/:splat 301!
 http://thebrink.netlify.app/* https://thebrink.netlify.app/:splat 301!
 https://www.thebrink.netlify.app/* https://thebrink.netlify.app/:splat 301!
