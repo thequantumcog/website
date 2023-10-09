@@ -1,5 +1,5 @@
 ---
-title: "The Problem With Smart Television"
+title: "The Problem With Smart Televisions"
 date: 2023-10-02T11:15:01+05:00
 description: "Making a Real SmartTV"
 # cover:
