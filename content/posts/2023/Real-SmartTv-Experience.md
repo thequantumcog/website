@@ -23,8 +23,8 @@ There can be two solutions to this problem
 ### Debloating Smart TV
 You can debloat your Smart TV by:
 * Rooting (May Void Warranty But a thorough debloat process)
-* Using Adb or a frontend for this process such as Universal Android Debloater
+* Using Adb or a frontend for this process such as [Universal Android Debloater](https://github.com/0x192/universal-android-debloater)
 ### Making Your Own Smart TV
-Displays are way Cheaper than than SmartTVs and they can be converted into smart TVs by attaching Raspberry Pi or a similar Mini PC. Options are limitless here. You can Browse the internet, install any app you want, Transform it into your Home Cinema, Connect it to your server, stream content, etc. If you want to explore this option further. I recommend this YouTube video from Jeff Greeling
+Displays are way Cheaper than than SmartTVs and they can be converted into smart TVs by attaching Raspberry Pi or a similar Mini PC. Options are limitless here. You can Browse the internet, install any app you want, Transform it into your Home Cinema, Connect it to your server, stream content, etc. If you want to explore this option further. I recommend this YouTube video from [Jeff Greeling](https://youtu.be/-epPf7D8oMk?si=a-CuvzJ0teLIrajl)
 ## Conclusion
 You can optimize your TV more by debloating it or make your own one with only the services you need. It will be way faster, cheaper, and better than your current Smart TV experience.
