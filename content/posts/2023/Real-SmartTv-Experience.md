@@ -1,5 +1,5 @@
 ---
-title: "Real SmartTv Experience"
+title: "The Problem With Smart Telvision"
 date: 2023-10-02T11:15:01+05:00
 description: "Making a Real SmartTV"
 # cover:
