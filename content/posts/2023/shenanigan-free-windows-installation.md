@@ -20,7 +20,7 @@ draft: false
 Download and Launch the Windows Installer.  
 Launch Command Prompt with `Shift+F10`
 
-### Partitions
+### Partitioning
 
 - List Disks with `list disk`
 - Select desired disk with `sel disk #`
@@ -40,19 +40,19 @@ Launch Command Prompt with `Shift+F10`
 - Assign Data partition `assign letter=c:`   
 **NOTE: You may need to UNASSIGN an existing C: drive**
 
-### Verify the Windows Version to Install
+### Selecting Windows Version to Install
 
-DISM is at the heart of every Windows installation. You need to do a verification on your installation ISO to figure out the source index # that you will install. 
+DISM is the tool that is actually used to install windows. You can use the following command to get index# of the Windows Version you want to install. 
 
 ```
 DISM /Get-ImageInfo /imagefile:x:\sources\install.wim
 ```
 
-Note the Index: # that you want to install
+**Note the Index: # that you want to install**
 
-### Install Main Windows Data
+### Install Windows Data
 
-Now we copy over the operating system in its entirety.
+Now we copy the windows data into the disk.
 
 ```
 DISM /apply-image /imagefile:x:\sources\install.wim /index:2 /applydir:c:
@@ -69,15 +69,9 @@ Copy the boot files to complete the EFI partition to boot into our windows.
 ```
 bcdboot c:\Windows /s G: /f ALL
 ```
-## Running debloat script after boot
-ChrisTitus created an awesome debloat script. We can use this to debloat windows and make it a little better.
-```
-irm https://christitus.com/win | iex
-```
-Also see:[this](https://github.com/massgravel/Microsoft-Activation-Scripts)
 ## Bypass OOBE For Windows 11
 
-The Out of Box Experience is changing all the time. The requirement to be online or only use a Microsoft account. Bypass it with this command and using `Shift+F10` to bring up the command prompt.  
+This bypasses Microsoft Account Requirement.  
 **NOTE: DISCONNECT FROM INTERNET before booting!**
 
 ```
@@ -86,4 +80,12 @@ oobe\BypassNRO
 
 System will restart after executing the command.    
 Select `Continue with limited Setup` and name the device and create a local account.
-## 
+## Running debloat script after boot
+ChrisTitus created an awesome debloat script. We can use this to debloat windows and make it a little better.
+```
+irm https://christitus.com/win | iex
+```
+Also see:[this](https://github.com/massgravel/Microsoft-Activation-Scripts)
+## Conclusion
+This is probably an overkill way to install Windows that I stole from Titus ;) and this provides a really good insight to what actually happens when you click install in Windows Setup.
+
