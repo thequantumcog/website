@@ -21,4 +21,5 @@ weight: 1
 * <a href="/disable-core-dumps" target="_blank">Disabling Core Dumps</a>
 
 ## Android
-* <a href="/android-tweaks/" target="_blank">Android Tweaks</a>
+* <a href="/android-tweaks/" target="_blank">Build.prop tweaks</a>
+* <a href="/adb-tricks/" target="_blank">ADB Backup commands</a>
