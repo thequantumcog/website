@@ -2,7 +2,7 @@ title: The Brink || Tech Journal
 baseURL: "https://thebrink.netlify.app"
 theme: hugo-PaperModX
 
-paginate: 5
+paginate: 10
 languageCode: "en-us"
 enableInlineShortcodes: true
 enableRobotsTXT: true
