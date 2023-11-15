@@ -1,7 +1,7 @@
 ---
 title: "Create Swapfile"
 date: 2023-11-15T19:15:49+05:00
-description: "Desc Text."
+#description: 
 url: "/create-swapfile/"
 tags: 
     - Linux
@@ -15,7 +15,7 @@ categories:
 #     hidden: true # only hide on current single page
 draft: false
 ---
-Use the following Commands to create and enable swapfile 
+Swapfile are rarely used now-a-days. But they still have one major use case which is hibernation. Use the following Commands to create and enable swapfile 
 
 ### Commands
 
