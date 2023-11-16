@@ -12,7 +12,6 @@ draft: false
 tags:
     - Linux
     - Configs
-weight: 1
 ---
 ## Linux
 * <a href="/autologin-linux/" target="_blank">One Click Boot</a>
