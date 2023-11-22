@@ -12,7 +12,7 @@ url: "/using-fingerprint-for-sudo-password/"
 draft: false
 ---
 Typing sudo password again and again becomes very frustrating at times. But there is a solution to this madness.
-You can use fingerprint for this process which is not that secure but better than using a root account.
+You can use fingerprint for this process.
 ## For Linux
 ### Debian/Ubuntu Based Distros
 - Run `sudo pam-auth-update`
