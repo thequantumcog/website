@@ -3,6 +3,7 @@ title: "Basic Git Cheatsheat"
 date: 2023-08-13T18:12:39+05:00
 description: "Manage your Project more easily "
 disableHLJS: false
+url: "git-cheatsheat"
 # cover:
 #     image: "<image path/url>"
 #     alt: "<alt text>"

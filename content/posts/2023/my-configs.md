@@ -2,6 +2,7 @@
 title: "My Configs"
 date: 2023-09-20T19:08:46+05:00
 description: "All my configs and fixes in one place"
+url: "/my-configs/"
 # cover:
 #     image: "<image path/url>"
 #     alt: "<alt text>"

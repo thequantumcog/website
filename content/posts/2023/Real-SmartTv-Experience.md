@@ -2,6 +2,7 @@
 title: "The Problem With Smart Televisions"
 date: 2023-10-02T11:15:01+05:00
 description: "Making a Real SmartTV"
+url: "making-a-real-smart-tv"
 # cover:
 #     image: "<image path/url>"
 #     alt: "<alt text>"
