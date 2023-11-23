@@ -3,16 +3,16 @@ title: "Using Fingerprint for Sudo Password"
 date: 2023-10-10T12:08:53+05:00
 description: "Never type a sudo password again!"
 url: "/using-fingerprint-for-sudo-password/"
-# cover:
-#     image: "<image path/url>"
-#     alt: "<alt text>"
-#     caption: "<text>"
-#     relative: false # when using page bundles set this to true
-#     hidden: true # only hide on current single page
+cover:
+    image: images/2023-thumbs/fingerprint.jpg
+    alt: "Using Fingerprint for Sudo Password"
+    caption: "Mac asking for TouchID"
+    relative: true # when using page bundles set this to true
+    hidden: false # only hide on current single page
 draft: false
 ---
 Typing sudo password again and again becomes very frustrating at times. But there is a solution to this madness.
-You can use fingerprint for this process.
+You can use fingerprint for this process. This post has been inspired by krdrag0n's tweet.
 ## For Linux
 ### Debian/Ubuntu Based Distros
 - Run `sudo pam-auth-update`
