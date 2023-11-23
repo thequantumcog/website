@@ -3,12 +3,12 @@ title: "Using Fingerprint for Sudo Password"
 date: 2023-10-10T12:08:53+05:00
 description: "Never type a sudo password again!"
 url: "/using-fingerprint-for-sudo-password/"
-cover:
-    image: images/2023-thumbs/fingerprint.jpg
-    alt: "Using Fingerprint for Sudo Password"
-    caption: "Mac asking for TouchID"
-    relative: true # when using page bundles set this to true
-    hidden: false # only hide on current single page
+# cover:
+#     image: images/2023-thumbs/fingerprint.jpg
+#     alt: "Using Fingerprint for Sudo Password"
+#     caption: "Mac asking for TouchID"
+#     relative: true # when using page bundles set this to true
+#     hidden: false # only hide on current single page
 draft: false
 ---
 Typing sudo password again and again becomes very frustrating at times. But there is a solution to this madness.
