@@ -15,7 +15,7 @@ categories:
 #     hidden: true # only hide on current single page
 draft: false
 ---
-Swapfile are rarely used now-a-days. But they still have one major use case which is hibernation. Use the following Commands to create and enable swapfile 
+Swapfile and swap-partitions are rarely used now-a-days. But they still have one major use case which is hibernation. Use the following Commands to create and enable swapfile 
 
 ### Commands
 
