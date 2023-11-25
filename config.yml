@@ -1,5 +1,5 @@
 title: The Brink || Tech Journal
-baseURL: "https://thebrink.netlify.app"
+baseURL: "https://thebrink.netlify.app/"
 theme: hugo-PaperModX
 
 paginate: 10
