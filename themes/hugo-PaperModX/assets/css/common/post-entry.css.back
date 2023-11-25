@@ -3,8 +3,6 @@
 }
 
 .post-entry {
-    display: flex;
-    flex-direction: column;
     position: relative;
     margin-bottom: var(--gap);
     padding: var(--gap);
@@ -12,10 +10,17 @@
     border-radius: var(--radius);
     border: 1px solid var(--border);
 }
-
 .post-entry:hover .entry-header h2 {
     color: var(--link-hover-color);
     box-shadow: var(--link-hover-underline-shadow);
+}
+
+/* .post-entry:active {
+    transform: scale(0.97);
+} */
+
+.tag-entry .entry-cover {
+    display: none;
 }
 
 .entry-header h2 {
@@ -42,65 +47,33 @@
     font-size: 13px;
 }
 
+.entry-link {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
 .entry-cover,
 .entry-isdraft {
     font-size: 14px;
-    color: var(--seco0ndary);
+    color: var(--secondary);
 }
 
 .entry-cover {
-    text-align: center;
     margin-bottom: var(--gap);
+    text-align: center;
 }
 
 .entry-cover img {
     border-radius: var(--radius);
-    width: 300px;
-    height: 300px;
+    width: 100%;
+    height: auto;
     image-rendering: -webkit-optimize-contrast;
-    margin-bottom: var(--gap);
 }
 
 .entry-cover a {
     color: var(--secondary);
     box-shadow: 0 1px 0 var(--primary);
 }
-
-@media (min-width: 600px) {
-    .post-entry {
-        display: grid;
-        grid-template-columns: 1fr auto;
-        grid-template-rows: auto 1fr auto;
-        grid-template-areas: "header header" "content cover" "footer footer";
-        align-items: start;
-    }
-
-    .entry-header {
-        grid-area: header;
-        margin-bottom: 0px;
-    }
-
-    .entry-cover {
-        margin-top: 20px;
-        grid-area: cover;
-        margin-bottom: 10px;
-    }
-
-    .entry-content {
-        grid-area: content;
-    }
-
-    .entry-footer {
-        grid-area: footer;
-        text-align: left;
-    }
-    .entry-content.has-image {
-        margin: auto; 
-        margin-right: 20px;
-        overflow: visible;
-        -webkit-line-clamp: initial; /* Disable line-clamp */
-    }
-
-
-}
-
