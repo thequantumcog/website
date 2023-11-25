@@ -7,8 +7,8 @@ cover:
     image: images/2023-thumbs/fingerprint.jpg
     alt: "Using Fingerprint for Sudo Password"
     caption: "Mac asking for TouchID"
-    relative: true # when using page bundles set this to true
-    hidden: false # only hide on current single page
+    relative: false # when using page bundles set this to true
+    hidden: true # only hide on current single page
 draft: false
 ---
 Typing sudo password again and again becomes very frustrating at times. But there is a solution to this madness.
