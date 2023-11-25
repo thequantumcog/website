@@ -78,7 +78,8 @@
   </section>
   {{- end }}
   {{- if not (.Param "hideMeta") }}
-  <footer class="entry-footer">
+  {{ $hasImage := .Params.cover.image }}
+  <footer class="entry-footer {{ if $hasImage }} has-image{{ end }}">
     {{- partial "post_meta.html" . -}}
   </footer>
   {{- end }}

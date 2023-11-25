@@ -42,6 +42,14 @@
     font-size: 13px;
 }
 
+.entry-link {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
 .entry-cover,
 .entry-isdraft {
     font-size: 14px;
@@ -54,9 +62,10 @@
 }
 
 .entry-cover img {
+    margin: auto;
     border-radius: var(--radius);
-    width: 300px;
-    height: 300px;
+    width: 100%;
+    height: auto;
     image-rendering: -webkit-optimize-contrast;
     margin-bottom: var(--gap);
 }
@@ -69,21 +78,25 @@
 @media (min-width: 600px) {
     .post-entry {
         display: grid;
-        grid-template-columns: 1fr auto;
+        grid-template-columns: auto 1fr;
         grid-template-rows: auto 1fr auto;
-        grid-template-areas: "header header" "content cover" "footer footer";
+        grid-template-areas: "header header" "cover content" "empty footer";
         align-items: start;
     }
 
     .entry-header {
         grid-area: header;
-        margin-bottom: 0px;
     }
 
     .entry-cover {
-        margin-top: 20px;
+        margin-top: calc(var(--gap) /2);
         grid-area: cover;
-        margin-bottom: 10px;
+        margin-bottom: 0px;
+    }
+    .entry-cover img {
+        width: 300px;
+        height: 169px;
+        margin-bottom: 0px;
     }
 
     .entry-content {
@@ -94,11 +107,15 @@
         grid-area: footer;
         text-align: left;
     }
+    .entry-footer.has-image {
+        margin-top: 150px;
+        margin-left: var(--gap);
+        grid-area: content;
+    }
     .entry-content.has-image {
-        margin: auto; 
-        margin-right: 20px;
-        overflow: visible;
-        -webkit-line-clamp: initial; /* Disable line-clamp */
+        margin-top: var(--gap); 
+        margin-left: var(--gap);
+        -webkit-line-clamp: 5; 
     }
 
 
