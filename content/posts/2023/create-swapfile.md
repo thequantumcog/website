@@ -29,6 +29,7 @@ then change fstab (**/etc/fstab**) so it automatically mounts your swap file on 
 
 `/swapfile none swap sw 0 0`
 
-Afterward, check if your swap file is operating properly with `htop`.
+Afterward, check if your swap file is operating properly with `htop`.  
+**Swap can degrade SSD performance overtime so keep that in mind.**
 
 

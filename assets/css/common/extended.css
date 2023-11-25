@@ -133,9 +133,11 @@ button#theme-toggle {
         text-align: left;
     }
     .entry-footer.has-image {
-        margin-top: 150px;
+        margin-top: 140px;
         margin-left: var(--gap);
         grid-area: content;
+        white-space:nowrap;
+
     }
     .entry-content.has-image {
         margin-top: var(--gap); 

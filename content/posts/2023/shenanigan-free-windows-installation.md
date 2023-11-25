@@ -4,9 +4,8 @@ date: 2023-10-06T18:38:39+05:00
 description: "The Real Way to Install Windows!!"
 url: "/shenanigan-free-windows-installation/"
 # cover:
-#     image: "<image path/url>"
-#     alt: "<alt text>"
-#     caption: "<text>"
+#     image: "images/2023-thumbs/computer.jpg"
+#     alt: "Shenanigan Free Windows Installation"
 #     relative: false # when using page bundles set this to true
 #     hidden: true # only hide on current single page
 tags:
