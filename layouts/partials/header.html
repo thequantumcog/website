@@ -17,13 +17,13 @@ function switchTheme(theme) {
       break;
     // auto
     default:
-        try{
-            document.getElementById("siteLogo").src = "/images/logo-dark.webp";
-      }
-      catch{}
-      if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
-      }
+        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            try{
+                document.getElementById("siteLogo").src = "/images/logo-dark.webp";
+            }
+            catch{}
+            document.body.classList.add('dark');
+        }
   }
 }
 
