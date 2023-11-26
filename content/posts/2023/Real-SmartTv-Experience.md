@@ -1,7 +1,6 @@
 ---
 title: "The Problem With Smart Televisions"
 date: 2023-10-02T11:15:01+05:00
-description: "Making a Real SmartTV"
 url: "making-a-real-smart-tv"
 # cover:
 #     image: "<image path/url>"
@@ -14,9 +13,9 @@ tags:
 draft: false
 ---
 ## The Problem
-Televisions were simple back in the day, you just pressed a button, and a channel played. Now Television has been transformed into “SmartTV”. It can do a lot more than display your traditional display but at the same time, it has also become a lot slower and expensive. It is full of Ads and Laggy UI.
-## Gaslighting of Tech Companies
-We have been led to believe that the electronics of today need more powerful chips than we have today. In reality, the tech companies just bundle a bunch of bloat which uses more resources than necessary. The chips of recent years are powerful enough to last almost 7-8 years. You can optimize your electronic device by removing bloat and can make some general light tasks as fast as a new machine. A more powerful chip is not a problem for the time being. The big problem is the Bloated UI and software experience. This is also the reason that Custom ROMs are faster than Stock ROMs because there are trackers and useless apps present in Stock ROMs that take up space and use that precious memory and CPU power.
+Televisions started as an easy to use device, you just pressed a button, and a channel played. Now-a-days, Television has been transformed into “SmartTV” Full of Ads, Tracking Built-In (as a feature btw) and Bloated UI
+## Optimizing Electronics
+The reason TVs feel bloated and laggy is because the tech companies just bundle the TV with a bunch of bloat that uses more resources than necessary. You can optimize your electronic device by removing bloat and can make your TV somewhat useable. Bloat takes up space and use that precious memory and CPU power.
 ## My Solution
 There can be two solutions to this problem
 * Debloating SmartTV

@@ -1,8 +1,8 @@
 ---
-title: "Android Tweaks"
+title: "Build.prop Tweaks"
 date: 2023-09-29T10:49:34+05:00
 description: "Making Android Better"
-url: "/android-tweaks/"
+url: "/build-prop-tweaks/"
 # cover:
 #     image: "<image path/url>"
 #     alt: "<alt text>"
@@ -66,4 +66,8 @@ keyguard.no_require_sim=true
 # Disable Audio Warnings
 audio.safemedia.bypass=true
 audio.safemedia.force=false
+
+# Disable Stupid port shuffling in wireless Adb (Android 10 and above)
+service.adb.tls.port=5555
+service.adb.tcp.port=5555
 ```

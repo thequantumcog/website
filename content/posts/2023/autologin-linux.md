@@ -13,8 +13,7 @@ tags:
     - Linux
 draft: false
 ---
-Autologin is generally not recommended for a laptop but if you want to set it up for your computer for one click boot experience you can do it.
-
+Getting one click boot is very satisfactory but you should know the security risks asscoiated with it. Nevertheless, here is the guide to Setup Autologin.
 ## Configuring TTY
 * Replace ar0177417 with your username
 
