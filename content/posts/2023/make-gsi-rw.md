@@ -11,13 +11,17 @@ url: "/make-gsi-rw/"
 #     hidden: true # only hide on current single page
 draft: false
 ---
-TWRP/ORFR is optional for this but its easier so I will be using that method.
+## With TWRP/OFRP
 ```
 adb shell
 lptools resize product_a 335872 # Do not change this value
 lptools resize system_a 5368709120 #4617089843 or 5368709120 (4.3GB or 5GB system)
 ```
-- Reboot Recovery after this
+## With Fastbootd
+```
+fastboot resize-logical-partition system_a  5368709120 #(For 5GB)
+```
+- Reboot Recovery/Fastbootd after this
 - Flash [product_gsi](https://xdaforums.com/attachments/product_gsi-img.5371179/)
 ```
 e2fsck -f /dev/block/by-name/system
