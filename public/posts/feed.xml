@@ -1,0 +1,571 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Posts on The Brink || Tech Journal</title>
+    <link>http://192.168.100.3:1313/posts/</link>
+    <description>Recent content in Posts on The Brink || Tech Journal</description>
+    <image>
+      <url>http://192.168.100.3:1313/images/logo-light.webp</url>
+      <link>http://192.168.100.3:1313/images/logo-light.webp</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 07 Feb 2024 17:00:35 +0500</lastBuildDate><atom:link href="http://192.168.100.3:1313/posts/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Make GSI RW (For Ext4)</title>
+      <link>http://192.168.100.3:1313/make-gsi-rw/</link>
+      <pubDate>Wed, 07 Feb 2024 17:00:35 +0500</pubDate>
+      
+      <guid>http://192.168.100.3:1313/make-gsi-rw/</guid>
+      <description>Get back the write access to System Partition</description>
+      <content:encoded><![CDATA[<h2 id="with-twrpofrp">With TWRP/OFRP</h2>
+<pre tabindex="0"><code>adb shell
+lptools resize product_a 335872 # Do not change this value
+lptools resize system_a 5368709120 #4617089843 or 5368709120 (4.3GB or 5GB system)
+</code></pre><h2 id="with-fastbootd">With Fastbootd</h2>
+<pre tabindex="0"><code>fastboot resize-logical-partition system_a  5368709120 #(For 5GB)
+</code></pre><ul>
+<li>Reboot Recovery/Fastbootd after this</li>
+<li>Flash <a href="https://xdaforums.com/attachments/product_gsi-img.5371179/" target="_blank" >product_gsi</a>
+
+</li>
+</ul>
+<pre tabindex="0"><code>e2fsck -f /dev/block/by-name/system
+resize2fs /dev/block/by-name/system 5G 
+e2fsck -E unshare_blocks /dev/block/by-name-system
+</code></pre>]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Old Internet is Dying</title>
+      <link>http://192.168.100.3:1313/old-internet-is-dying/</link>
+      <pubDate>Sat, 25 Nov 2023 12:48:29 +0500</pubDate>
+      
+      <guid>http://192.168.100.3:1313/old-internet-is-dying/</guid>
+      <description>Yes, You heard me right. But you might be wondering, &amp;ldquo;Isn&amp;rsquo;t the internet growing at an unprecedented rate?&amp;rdquo;. You might be correct but over the years, the Internet has become more centralized than ever.
+HOW? Big companies and social media control around 50% of internet traffic. People no longer have their own corner on the internet. IRC and RSS are dying. Hardly anybody notices small sites on their own unless you publish to social media.</description>
+      <content:encoded><![CDATA[<p>Yes, You heard me right. But you might be wondering, &ldquo;Isn&rsquo;t the internet growing at an unprecedented rate?&rdquo;. You might be correct but over the years, the Internet has become more centralized than ever.</p>
+<h2 id="how">HOW?</h2>
+<ul>
+<li>Big companies and social media control around 50% of internet traffic.</li>
+<li>People no longer have their own corner on the internet.</li>
+<li>IRC and RSS are dying.</li>
+<li>Hardly anybody notices small sites on their own unless you publish to social media.</li>
+<li>Small platforms are shrinking.</li>
+<li>AI is replacing the writer&rsquo;s human connection with the reader. These AI-articles are hastily written and mass-produced. The Internet is being filled with these garbage AI-written articles that are pretty useless.</li>
+<li>This era of people think that the internet is just limited to these social media sites. There are plenty of great small websites but they are becoming harder to find. People just quit because they don&rsquo;t get any traffic.</li>
+<li>Everything that was once run for fun, run because it was cool is now run for profit. Either a site exists to sell you things, sell you ideas, or sell you as a product. Things that are fun and goofy get overshadowed by the giants who can afford better SEO.
+There <strong>isn&rsquo;t any fix</strong> to this problem but <strong>it&rsquo;s just sad</strong> to see the early internet fade away.</li>
+</ul>
+]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Create Swapfile</title>
+      <link>http://192.168.100.3:1313/create-swapfile/</link>
+      <pubDate>Wed, 15 Nov 2023 19:15:49 +0500</pubDate>
+      
+      <guid>http://192.168.100.3:1313/create-swapfile/</guid>
+      <description>Swapfile and swap-partitions are rarely used now-a-days. But they still have one major use case which is hibernation. Use the following Commands to create and enable swapfile
+Commands sudo fallocate -l 6G /swapfile sudo chmod 600 /swapfile sudo mkswap /swapfile sudo swapon /swapfile then change fstab (/etc/fstab) so it automatically mounts your swap file on startup
+/swapfile none swap sw 0 0
+Afterward, check if your swap file is operating properly with htop.</description>
+      <content:encoded><![CDATA[<p>Swapfile and swap-partitions are rarely used now-a-days. But they still have one major use case which is hibernation. Use the following Commands to create and enable swapfile</p>
+<h3 id="commands">Commands</h3>
+<pre tabindex="0"><code>sudo fallocate -l 6G /swapfile
+sudo chmod 600 /swapfile
+sudo mkswap /swapfile
+sudo swapon /swapfile
+</code></pre><p>then change fstab (<strong>/etc/fstab</strong>) so it automatically mounts your swap file on startup</p>
+<p><code>/swapfile none swap sw 0 0</code></p>
+<p>Afterward, check if your swap file is operating properly with <code>htop</code>.<br>
+<strong>Swap can degrade SSD performance overtime so keep that in mind.</strong></p>
+]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Using Fingerprint for Sudo Password</title>
+      <link>http://192.168.100.3:1313/using-fingerprint-for-sudo-password/</link>
+      <pubDate>Tue, 10 Oct 2023 12:08:53 +0500</pubDate>
+      
+      <guid>http://192.168.100.3:1313/using-fingerprint-for-sudo-password/</guid>
+      <description>Never type a sudo password again!</description>
+      <content:encoded><![CDATA[<p>Typing sudo password again and again becomes very frustrating at times. But there is a solution to this madness.
+You can use fingerprint for this process. This post has been inspired by krdrag0n&rsquo;s tweet.</p>
+<h2 id="for-linux">For Linux</h2>
+<h3 id="debianubuntu-based-distros">Debian/Ubuntu Based Distros</h3>
+<ul>
+<li>Run <code>sudo pam-auth-update</code></li>
+<li>And use the space bar to enable Fingerprint authentication in the dialog</li>
+</ul>
+<h3 id="arch-based-distros">Arch Based Distros</h3>
+<ul>
+<li>Install <code>fprintd</code> and <code>imagemagick</code><br>
+<strong>Note: Some devices may require a different fork of libfprint.<a href="https://wiki.archlinux.org/title/fprint#Installation" target="_blank" >See Here</a>
+
+</strong></li>
+<li>Enroll fingerprint with <code>fprint-enroll</code></li>
+<li>Append these lines to <code>/etc/pam.d/sudo</code></li>
+</ul>
+<pre tabindex="0"><code>auth required pam_env.so
+auth sufficient pam_fprintd.so
+auth sufficient pam_unix.so try_first_pass likeauth nullok
+auth required pam_deny.so
+</code></pre><h2 id="for-mac">For Mac</h2>
+<ul>
+<li>Add <code>auth sufficient pam_tid.so</code> to <code>/etc/pam.d/sudo</code></li>
+</ul>
+]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Useful Adb Commands</title>
+      <link>http://192.168.100.3:1313/adb-tricks/</link>
+      <pubDate>Sun, 08 Oct 2023 12:30:09 +0500</pubDate>
+      
+      <guid>http://192.168.100.3:1313/adb-tricks/</guid>
+      <description>Cool adb tricks to save you some time</description>
+      <content:encoded><![CDATA[<h2 id="backup-apks">Backup Apks</h2>
+<h3 id="get-list-of-installed-apps">Get list of installed apps</h3>
+<p><code>adb shell pm list packages -f -3</code></p>
+<h3 id="fetch-apks-of-all-installed-apps">Fetch Apks of all Installed Apps</h3>
+<pre tabindex="0"><code>for APP in $(adb shell pm list packages -3 -f)
+do
+  adb pull $( echo ${APP} | sed &#34;s/^package://&#34; | sed &#34;s/base.apk=/base.apk /&#34;).apk
+done
+</code></pre><h3 id="fetch-apk-of-one-app">Fetch Apk of One App</h3>
+<p><code>adb pull /data/app/appFolderNameHere/base.apk app.apk</code></p>
+<h2 id="getting-partitions-imgs">Getting Partitions Imgs</h2>
+<h3 id="backup">Backup</h3>
+<p><code>adb pull /dev/block/by-name/SYSTEM system.img</code></p>
+<h3 id="restore">Restore</h3>
+<p><code>adb push system.img /sdcard/</code><br>
+Then<br>
+<code>dd if=/sdcard/system.img of=/dev/block/by-name/SYSTEM</code></p>
+<h2 id="logcat">Logcat</h2>
+<p><code>adb logcat -v color</code></p>
+]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Installing Windows Using Only CMD</title>
+      <link>http://192.168.100.3:1313/shenanigan-free-windows-installation/</link>
+      <pubDate>Fri, 06 Oct 2023 18:38:39 +0500</pubDate>
+      
+      <guid>http://192.168.100.3:1313/shenanigan-free-windows-installation/</guid>
+      <description>The Real Way to Install Windows!!</description>
+      <content:encoded><![CDATA[<h2 id="the-installer">The Installer</h2>
+<p>Download and Launch the Windows Installer.<br>
+Launch Command Prompt with <code>Shift+F10</code></p>
+<h3 id="partitioning">Partitioning</h3>
+<ul>
+<li>List Disks with <code>list disk</code></li>
+<li>Select desired disk with <code>sel disk #</code></li>
+<li>Check to verify there is NO partitions <code>list partition</code></li>
+<li>(Optional) Delete any existing partitions <code>del part #</code><br>
+<strong>NOTE: THIS ERASES ALL DATA</strong></li>
+<li>You can also use <code>clean</code> for deleting all partions.</li>
+<li>Check to verify DISK is GPT <code>list disk</code> and use <code>convert gpt</code><br>
+<strong>If GPT is not Enabled</strong></li>
+<li>Create Boot partition <code>create partition efi size=100</code></li>
+<li>Create Data partition <code>create partition primary size=*</code></li>
+<li>Select Boot <code>sel partition 1</code></li>
+<li>Format Boot <code>format fs=FAT32 quick</code></li>
+<li>Assign Boot partition <code>assign letter=g:</code></li>
+<li>Select Data <code>sel par 2</code></li>
+<li>Format Data <code>format fs=NTFS quick</code></li>
+<li>Assign Data partition <code>assign letter=c:</code><br>
+<strong>NOTE: You may need to UNASSIGN an existing C: drive</strong></li>
+</ul>
+<h3 id="selecting-windows-version-to-install">Selecting Windows Version to Install</h3>
+<p>DISM is the tool that is actually used to install windows. You can use the following command to get index# of the Windows Version you want to install.</p>
+<pre tabindex="0"><code>DISM /Get-ImageInfo /imagefile:x:\sources\install.wim
+</code></pre><p><strong>Note the Index: # that you want to install</strong></p>
+<h3 id="install-windows-data">Install Windows Data</h3>
+<p>Now we copy the windows data into the disk.</p>
+<pre tabindex="0"><code>DISM /apply-image /imagefile:x:\sources\install.wim /index:2 /applydir:c:
+</code></pre><h3 id="english-world-debloating-trick">English (World) Debloating Trick</h3>
+<p>This will remove a lot of tiles from windows start menu and provides overall clean experience</p>
+<pre tabindex="0"><code>dism /Image:c: /Set-UserLocale:en-001
+</code></pre><h3 id="copy-boot-files-to-efi">Copy Boot Files to EFI</h3>
+<p>Copy the boot files to complete the EFI partition to boot into our windows.</p>
+<pre tabindex="0"><code>bcdboot c:\Windows /s G: /f ALL
+</code></pre><h2 id="bypass-oobe-for-windows-11">Bypass OOBE For Windows 11</h2>
+<p>This bypasses Microsoft Account Requirement.<br>
+<strong>NOTE: DISCONNECT FROM INTERNET before booting!</strong></p>
+<pre tabindex="0"><code>oobe\BypassNRO
+</code></pre><p>System will restart after executing the command. <br>
+Select <code>Continue with limited Setup</code> and name the device and create a local account.</p>
+<h2 id="running-debloat-script-after-boot">Running debloat script after boot</h2>
+<p>ChrisTitus created an awesome debloat script. We can use this to debloat windows and make it a little better.</p>
+<pre tabindex="0"><code>irm https://christitus.com/win | iex
+</code></pre><p>Also see:<a href="https://github.com/massgravel/Microsoft-Activation-Scripts" target="_blank" >this</a>
+
+</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>This is probably an overkill way to install Windows that I stole from Titus ;) and this provides a really good insight to what actually happens when you click install in Windows Setup.</p>
+]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Optimizing Linux Boot Time</title>
+      <link>http://192.168.100.3:1313/optimizing-boot-time/</link>
+      <pubDate>Thu, 05 Oct 2023 17:35:10 +0500</pubDate>
+      
+      <guid>http://192.168.100.3:1313/optimizing-boot-time/</guid>
+      <description>Boot your Linux Machine instantly</description>
+      <content:encoded><![CDATA[<p>Boot time is how much time it takes to boot your computer when you press your power button. A lot of things can slow down your boot on Linux. In this article we will discuss this in detail.</p>
+<h2 id="systemd-optimizations">Systemd optimizations</h2>
+<h3 id="disabling-unnecessary-services">Disabling unnecessary services</h3>
+<p><code>systemd-analyze</code> is a command available on systemd distros (which most distros are). It shows which service is using more time to load and you can disable that service. Just don&rsquo;t disable any important service or your computer won&rsquo;t boot at all.<br>
+You can also use the sub-command <code>systemd-analyze blame</code> for more clearer output.</p>
+<h3 id="using-socket-instead-of-service-for-starting-service">Using <code>.socket</code> instead of <code>.service</code> for starting service</h3>
+<p><code>.socket</code> are used to initiate the service process when its needed while <code>.service</code> starts the process on boot which costs boot time and unnecessary for services like <code>cups</code></p>
+<h2 id="slimming-down-initramfs">Slimming Down initramfs</h2>
+<h3 id="mkinitcpio">Mkinitcpio</h3>
+<h4 id="using-systemd-instead-of-busybox-on-early-init">Using Systemd instead of Busybox on early init</h4>
+<p>By default, the Mkinitcpio configuration uses the <code>base</code> and <code>udev</code> hooks for building the initramfs. Faster boot times can be achieved by replacing them with systemd</p>
+<h4 id="removing-unnecessary-hooks">Removing Unnecessary Hooks</h4>
+<p>Use <code>autodetect</code> hook for initramfs which auto detects the require hooks</p>
+<h4 id="using-lz4-compression">Using lz4 compression</h4>
+<p>lz4 compression is slightly faster than zstd or gzip compressions. You can change this in <code>/etc/mkinitcpio.conf</code></p>
+<h3 id="switch-to-dracut">Switch to Dracut</h3>
+<p>Dracut can generate unified kernel images with smaller size if configured correctly. This allows faster kernel loading.</p>
+<h2 id="using-alternative-init-system-font-size2not-recommended-for-beginnersfont">Using Alternative Init System <font size="2">(Not recommended for beginners)</font></h2>
+<p>Systemd started as an init manager but now has absorbed many services and processes. Other init systems such as runit,dinit,s6,etc. are much lighter and allows much faster boot time than systemd</p>
+<h2 id="disable-splash">Disable Splash</h2>
+<p>Disabling <strong>Bios Splash and Plymouth Splash</strong> can also speed up the boot because splash adds a delay in boot</p>
+<h2 id="disable-terminal-output">Disable Terminal Output</h2>
+<p>On some fast systems using SSDs, The tty could also be a bottlneck meaning lesser the terminal output faster will be the boot.</p>
+<h2 id="staggered-spin-up-on-hdd">Staggered Spin-up on HDD</h2>
+<p>On HDDs staggered spin can also be a problem but it can be fixed by checking dmesg output,i.e, <code>sudo dmesg | grep SSS</code>.<br>
+If there is output of this command, then add <code>libahci.ignore_sss=1</code> to kernel parameters.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>This is barely scratching the surface in terms of optimization. You can always do some more optimization. Linux is already way faster than Windows and lighter in terms of resource usage. Then on top of that you can optimize it more to get <strong>single digit boot times!</strong></p>
+]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>The Problem With Smart Televisions</title>
+      <link>http://192.168.100.3:1313/making-a-real-smart-tv/</link>
+      <pubDate>Mon, 02 Oct 2023 11:15:01 +0500</pubDate>
+      
+      <guid>http://192.168.100.3:1313/making-a-real-smart-tv/</guid>
+      <description>The Problem Televisions started as an easy to use device, you just pressed a button, and a channel played. Now-a-days, Television has been transformed into “SmartTV” Full of Ads, Tracking Built-In (as a feature btw) and Bloated UI
+Optimizing Electronics The reason TVs feel bloated and laggy is because the tech companies just bundle the TV with a bunch of bloat that uses more resources than necessary. You can optimize your electronic device by removing bloat and can make your TV somewhat useable.</description>
+      <content:encoded><![CDATA[<h2 id="the-problem">The Problem</h2>
+<p>Televisions started as an easy to use device, you just pressed a button, and a channel played. Now-a-days, Television has been transformed into “SmartTV” Full of Ads, Tracking Built-In (as a feature btw) and Bloated UI</p>
+<h2 id="optimizing-electronics">Optimizing Electronics</h2>
+<p>The reason TVs feel bloated and laggy is because the tech companies just bundle the TV with a bunch of bloat that uses more resources than necessary. You can optimize your electronic device by removing bloat and can make your TV somewhat useable. Bloat takes up space and use that precious memory and CPU power.</p>
+<h2 id="my-solution">My Solution</h2>
+<p>There can be two solutions to this problem</p>
+<ul>
+<li>Debloating SmartTV</li>
+<li>Making Your Own SmartTV</li>
+</ul>
+<h3 id="debloating-smart-tv">Debloating Smart TV</h3>
+<p>You can debloat your Smart TV by:</p>
+<ul>
+<li>Rooting (May Void Warranty But a thorough debloat process)</li>
+<li>Using Adb or a frontend for this process such as <a href="https://github.com/0x192/universal-android-debloater" target="_blank" >Universal Android Debloater</a>
+
+</li>
+</ul>
+<h3 id="making-your-own-smart-tv">Making Your Own Smart TV</h3>
+<p>Displays are way Cheaper than than SmartTVs and they can be converted into smart TVs by attaching Raspberry Pi or a similar Mini PC. Options are limitless here. You can Browse the internet, install any app you want, Transform it into your Home Cinema, Connect it to your server, stream content, etc. If you want to explore this option further. I recommend this YouTube video from <a href="https://youtu.be/-epPf7D8oMk?si=a-CuvzJ0teLIrajl" target="_blank" >Jeff Greeling</a>
+
+</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>You can optimize your TV more by debloating it or make your own one with only the services you need. It will be way faster, cheaper, and better than your current Smart TV experience.</p>
+]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Disable Core Dumps</title>
+      <link>http://192.168.100.3:1313/disable-core-dumps/</link>
+      <pubDate>Sun, 01 Oct 2023 09:50:44 +0500</pubDate>
+      
+      <guid>http://192.168.100.3:1313/disable-core-dumps/</guid>
+      <description>Disabling heavy core dumps that are rarely useful</description>
+      <content:encoded><![CDATA[<h2 id="setting-limits">Setting Limits</h2>
+<ul>
+<li>Edit <code>/etc/security/limits.conf</code></li>
+<li>Append the following lines</li>
+</ul>
+<pre tabindex="0"><code>* hard core 0
+* soft core 0
+</code></pre><h2 id="disabling-setgid-and-setuid-programs-from-core-dumping">Disabling setgid and setuid programs from core dumping</h2>
+<ul>
+<li>Edit <code>/etc/sysctl.d/9999-disable-core-dump.conf</code> or <code>/etc/sysctl.conf</code></li>
+<li>Append the following lines</li>
+</ul>
+<pre tabindex="0"><code>fs.suid.dumpable=0
+kernel.core_pattern= |/bin/false
+</code></pre>]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Build.prop Tweaks</title>
+      <link>http://192.168.100.3:1313/build-prop-tweaks/</link>
+      <pubDate>Fri, 29 Sep 2023 10:49:34 +0500</pubDate>
+      
+      <guid>http://192.168.100.3:1313/build-prop-tweaks/</guid>
+      <description>Making Android Better</description>
+      <content:encoded><![CDATA[<h2 id="buildprop-tweaks">Build.Prop Tweaks</h2>
+<pre tabindex="0"><code># enable software keys
+qemu.hw.mainkeys=0
+# Quick Power On
+ro.config.hw_quickpoweron=true
+# Disable Error reporting
+profiler.force_disable_err_rpt=1
+profiler.force_disable_ulog=1
+ro.kernel.android.checkjni=0
+ro.kernel.checkjni=0
+# Disable GPS Entirely
+ro.com.google.locationfeatures=0
+ro.com.google.networklocation=0
+
+# Advanced (Not Recommended)
+ro.config.nocheckin=1
+persist.android.strictmode=0
+ro.secure=0
+dalvik.vm.verify-bytecode=false
+dalvik.vm.dexopt-flags=m=y,v=n,o=v
+logcat.live=disable
+ro.boot.selinux=permissive
+androidboot.selinux=permissive
+persist.android.strictmode=0
+persist.selinux.enforcing=0
+ro.build.selinux.enforce=0
+security.perf_harden=0
+selinux.reload_policy=0
+selinux.sec.restorecon=0
+ro.adb.secure=0
+
+# Disable Boot Animation
+debug.sf.nobootanimation=1
+# Networking
+net.ipv6.conf.all.disable_ipv6=1
+net.ipv6.conf.default.disable_ipv6=1
+# Disable SIM Functionality
+persist.telephony.support.ipv6=0
+persist.radio.apm_sim_not_pwdn=0
+# Disable Sensors
+ro.qti.sensors.pedometer=false
+ro.qti.sensors.step_counter=false
+ro.qti.sensors.step_detector=false
+ro.qti.sensors.facing=false
+ro.qti.sensors.pick_up=false
+keyguard.no_require_sim=true
+# Disable Audio Warnings
+audio.safemedia.bypass=true
+audio.safemedia.force=false
+
+# Disable Stupid port shuffling in wireless Adb (Android 10 and above)
+service.adb.tls.port=5555
+service.adb.tcp.port=5555
+</code></pre>]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>My Configs</title>
+      <link>http://192.168.100.3:1313/my-configs/</link>
+      <pubDate>Wed, 20 Sep 2023 19:08:46 +0500</pubDate>
+      
+      <guid>http://192.168.100.3:1313/my-configs/</guid>
+      <description>All my configs and fixes in one place</description>
+      <content:encoded><![CDATA[<h2 id="linux">Linux</h2>
+<ul>
+<li><a href="/autologin-linux/" target="_blank">One Click Boot</a></li>
+<li><a href="/regenerating-configs-using-pacman/" target="_blank">Regenerating Config Files on Arch</a></li>
+<li><a href="/spotx" target="_blank">Spotify Adblock</a></li>
+<li><a href="/disable-core-dumps" target="_blank">Disabling Core Dumps</a></li>
+</ul>
+<h2 id="android">Android</h2>
+<ul>
+<li><a href="/android-tweaks/" target="_blank">Build.prop tweaks</a></li>
+<li><a href="/adb-tricks/" target="_blank">ADB Backup commands</a></li>
+</ul>
+]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Directly Stream mega.nz video</title>
+      <link>http://192.168.100.3:1313/posts/2023/streaming-mega-files-directly/</link>
+      <pubDate>Sat, 09 Sep 2023 09:14:45 +0500</pubDate>
+      
+      <guid>http://192.168.100.3:1313/posts/2023/streaming-mega-files-directly/</guid>
+      <description>megatools dl &amp;#34;https://mega.nz/#hashvideo&amp;#34; --path - | mpv - </description>
+      <content:encoded><![CDATA[<pre tabindex="0"><code>megatools dl &#34;https://mega.nz/#hashvideo&#34; --path - | mpv -
+</code></pre>]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Autologin Linux</title>
+      <link>http://192.168.100.3:1313/autologin-linux/</link>
+      <pubDate>Sat, 09 Sep 2023 08:45:55 +0500</pubDate>
+      
+      <guid>http://192.168.100.3:1313/autologin-linux/</guid>
+      <description>For One Click Boot</description>
+      <content:encoded><![CDATA[<p>Getting one click boot is very satisfactory but you should know the security risks asscoiated with it. Nevertheless, here is the guide to Setup Autologin.</p>
+<h2 id="configuring-tty">Configuring TTY</h2>
+<ul>
+<li>Replace ar0177417 with your username</li>
+</ul>
+<pre tabindex="0"><code>/sbin/agetty -n -N -i -a ar0177417 tty1 38400 linux
+</code></pre><h2 id="autostarting-display-server">Autostarting Display Server</h2>
+<ul>
+<li>Replace Hyprland or startx with your desired WM or startx for xorg</li>
+</ul>
+<h3 id="for-fish-shell">For Fish Shell</h3>
+<ul>
+<li>Add this to your fish config</li>
+</ul>
+<pre tabindex="0"><code> if status is-login
+     if test -z &#34;$DISPLAY&#34; -a &#34;$XDG_VTNR&#34; = 1
+         export LIBSEAT_BACKEND=logind
+         exec dbus-run-session Hyprland &amp;&gt; /dev/null
+     end
+ end
+if status is-interactive
+    # Commands to run in interactive sessions can go here
+end
+</code></pre><h3 id="for-bash-shell">For Bash Shell</h3>
+<ul>
+<li>Add this to ~/.bash_profile</li>
+</ul>
+<pre tabindex="0"><code>if [ -z &#34;${DISPLAY}&#34; ] &amp;&amp; [ &#34;${XDG_VTNR}&#34; -eq 1 ]; then
+  exec startx
+fi
+</code></pre>]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Basic Git Cheatsheat</title>
+      <link>http://192.168.100.3:1313/git-cheatsheat/</link>
+      <pubDate>Sun, 13 Aug 2023 18:12:39 +0500</pubDate>
+      
+      <guid>http://192.168.100.3:1313/git-cheatsheat/</guid>
+      <description>Manage your Project more easily </description>
+      <content:encoded><![CDATA[<p>Git is a very powerful version control and a project managing tool. Every dev has to use git for projects. Below is my git cheatsheat. Below are some basic commands and some settings every developer should know</p>
+<h2 id="basics">Basics</h2>
+<ul>
+<li><code>git init</code> for initiating a git repo in a folder</li>
+<li><code>git add</code> to add file/folder to staging area</li>
+<li><code>git commit</code> to commit changes</li>
+<li><code>git push</code> to publish changes to remote</li>
+<li><code>git status</code> to check status of git repo including staged and unstaged changes</li>
+</ul>
+<h2 id="branches">Branches</h2>
+<p>You can use branches for making a copy of repo, implementing a feature and then merging it back to main branch</p>
+<ul>
+<li><code>git branch</code> is used for listing all branches</li>
+<li><code>git branch &lt;branch_name&gt;</code> is used for creating new branch</li>
+<li><code>git branch -d &lt;branch_name&gt;</code> is used for deleting a branch</li>
+<li><code>git checkout &lt;branch_name&gt;</code> to switch to new branch</li>
+<li><code>git merge &lt;merge_into_this&gt;</code> to merge currently checked out branch to some other branch</li>
+</ul>
+<h2 id="stashes">Stashes</h2>
+<p>The <code>git stash</code> command takes your uncommitted changes (both staged and unstaged), saves them away for later use, and then reverts them from your working copy.
+This is particularly useful in merge conflicts and syncing forks.</p>
+<ul>
+<li><code>git stash list</code> shows all stashes</li>
+<li><code>git stash drop</code> for dropping changes</li>
+<li><code>git stash apply</code> for applying changes</li>
+<li><code>git stash pop</code> for <code>git stash apply + drop</code></li>
+</ul>
+<h2 id="reverting-commit">Reverting Commit</h2>
+<ul>
+<li><code>git reset --hard HEAD~n</code> (Doesn&rsquo;t retain uncommited changes)</li>
+<li><code>git reset --soft HEAD~n</code> (Retains uncommited Changes)
+where n is the number of commits to be reverted.</li>
+</ul>
+<h2 id="git-configs">Git Configs</h2>
+<p>You can also use git configs to create your own shortcuts and much more. The one git setting I always use is</p>
+<ul>
+<li>Auto Setting push remote</li>
+</ul>
+<pre tabindex="0"><code>git config --global --add --bool push.autoSetupRemote true
+</code></pre><p>For Further commands see this <a href="https://gist.github.com/Preethi-Dev/fa8ae46a75761356dc1fa711376c8345" target="_blank" >cheatsheat</a>
+
+
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/ecK3EnyGD8o" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+</p>
+]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Effortless Directory Regeneration Using Pacman</title>
+      <link>http://192.168.100.3:1313/regenerating-configs-using-pacman/</link>
+      <pubDate>Tue, 04 Jul 2023 13:06:37 +0500</pubDate>
+      
+      <guid>http://192.168.100.3:1313/regenerating-configs-using-pacman/</guid>
+      <description>I was trying to edit /etc/pam.d and fix elogind on my Artix Installation. Unfortunately, It went badly and I messed up my pam.d directory.However, I Found a Fix. In pacman, It is very easy to check files owned by packages. So, We can simply generate a list of packages which have files in pam.d and reinstall them.
+Steps Remove Files to be regenerated Then, Stock Files are regenerated by using the following command: For Bash Shell pacman -S $(pacman -Ql | grep /etc/pam.</description>
+      <content:encoded><![CDATA[<p>I was trying to edit /etc/pam.d and fix elogind on my Artix Installation. Unfortunately, It went badly and I messed up my pam.d directory.However, I Found a Fix. In pacman, It is very easy to check files owned by packages. So, We can simply generate a list of packages which have files in pam.d and reinstall them.</p>
+<h2 id="steps">Steps</h2>
+<ol>
+<li>Remove Files to be regenerated</li>
+<li>Then, Stock Files are regenerated by using the following command:</li>
+</ol>
+<h3 id="for-bash-shell">For Bash Shell</h3>
+<p><code>pacman -S $(pacman -Ql | grep /etc/pam.d/$ | awk '{print $1}')</code></p>
+<h3 id="for-fish-shell">For Fish Shell</h3>
+<p><code>pacman -S (pacman -Ql | grep /etc/pam.d/\$ | awk '{print $1}')</code></p>
+<p>This is very useful specially for rolling and bleeding edge distros. Using this you can regenerate directories. If you want regenerate a specific files just substitute <code>/etc/pam.d/$</code> with the name of file.</p>
+]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Decentralized Social Media</title>
+      <link>http://192.168.100.3:1313/decentralized-social-media/</link>
+      <pubDate>Mon, 19 Jun 2023 21:05:15 +0500</pubDate>
+      
+      <guid>http://192.168.100.3:1313/decentralized-social-media/</guid>
+      <description>Is Social Media better off Decentralized?</description>
+      <content:encoded><![CDATA[<p>Social Media has changed drastically over the years.But the question is &ldquo;Can you really trust these companies?&rdquo;. Decentralized social media apps and websites are gaining traction especially because of recent policy changes of social media apps such as Reddit and Twitter. Last Year, Twitter was acquired by Elon Musk and raised API prices and changed the platform for better or worse. Similarly, Reddit also increased its API prices. Decentralized Social Media such as Mastodon, Lemmy, and Kbin gained popularity due to this.</p>
+<h2 id="advantages">Advantages</h2>
+<ul>
+<li>Decentralized Social Media is not controlled by one single company or person rather you can make your own instance of social media and interact with others. Thus, you cannot be banned from such a platform.</li>
+<li>Decentralized Social Media is also harder to fully ban in a country because there are so many instances. If one instance is banned, you can use another.</li>
+<li>If you don’t like the policies of one instance you can choose a different instance of your liking.</li>
+</ul>
+<h2 id="disadvantages">Disadvantages</h2>
+<ul>
+<li>The main disadvantage of something like Lemmy is that it is harder to moderate because of bot accounts.</li>
+<li>Fewer Users are present on these platforms.</li>
+</ul>
+]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Blocking Ads on Spotify</title>
+      <link>http://192.168.100.3:1313/spotx/</link>
+      <pubDate>Wed, 04 Jan 2023 13:05:38 +0500</pubDate>
+      
+      <guid>http://192.168.100.3:1313/spotx/</guid>
+      <description>Are you tired of constantly being interrupted by ads while listening to your favorite music on Spotify? If so, you&amp;rsquo;re in luck! I just stumbled upon SpotX, the Spotify ad blocker that will revolutionize the way you listen to music.
+SpotX and BlockTheSpot are simple, lightweight tools that blocks all ads on Spotify, allowing you to enjoy uninterrupted music all day long. With SpotX, you no longer have to put up with annoying ads or pay for a premium subscription to get rid of them.</description>
+      <content:encoded><![CDATA[<p><em>Are you tired of constantly being interrupted by ads while listening to your favorite music on Spotify?</em> If so, you&rsquo;re in luck! I just stumbled upon SpotX, the Spotify ad blocker that will revolutionize the way you listen to music.<br>
+SpotX and BlockTheSpot are simple, lightweight tools that blocks all ads on Spotify, allowing you to enjoy uninterrupted music all day long. With SpotX, you no longer have to put up with annoying ads or pay for a premium subscription to get rid of them. Simply download the tool, run it, and you&rsquo;re good to go.</p>
+<h3 id="prerequisite">Prerequisite</h3>
+<ul>
+<li>Spotify</li>
+<li>An internet connection</li>
+</ul>
+<h3 id="installation">Installation</h3>
+<p>Just goto to the <a href="https://github.com/SpotX-CLI/SpotX-Linux" target="_blank" ><strong>SpotX</strong></a>
+
+ and run the bash command and for Windows use <a href="https://github.com/mrpond/BlockTheSpot" target="_blank" ><strong>BlockTheSpot</strong></a>
+
+.
+<strong>However,</strong> if you have installed Spotify from Microsoft Store, It would be uninstalled and the script would automatically install the latest official version from spotify.</p>
+<p>So why wait? If you&rsquo;re tired of being interrupted by ads on Spotify, give SpotX a try and see for yourself how much better your music listening experience can be. You won&rsquo;t be disappointed!</p>
+]]></content:encoded>
+    </item>
+    
+  </channel>
+</rss>

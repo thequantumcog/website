@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Rant on The Brink || Tech Journal</title>
+    <link>http://192.168.100.3:1313/tags/rant/</link>
+    <description>Recent content in Rant on The Brink || Tech Journal</description>
+    <image>
+      <url>http://192.168.100.3:1313/images/logo-light.webp</url>
+      <link>http://192.168.100.3:1313/images/logo-light.webp</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 02 Oct 2023 11:15:01 +0500</lastBuildDate><atom:link href="http://192.168.100.3:1313/tags/rant/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Problem With Smart Televisions</title>
+      <link>http://192.168.100.3:1313/making-a-real-smart-tv/</link>
+      <pubDate>Mon, 02 Oct 2023 11:15:01 +0500</pubDate>
+      
+      <guid>http://192.168.100.3:1313/making-a-real-smart-tv/</guid>
+      <description>The Problem Televisions started as an easy to use device, you just pressed a button, and a channel played. Now-a-days, Television has been transformed into “SmartTV” Full of Ads, Tracking Built-In (as a feature btw) and Bloated UI
+Optimizing Electronics The reason TVs feel bloated and laggy is because the tech companies just bundle the TV with a bunch of bloat that uses more resources than necessary. You can optimize your electronic device by removing bloat and can make your TV somewhat useable.</description>
+      <content:encoded><![CDATA[<h2 id="the-problem">The Problem</h2>
+<p>Televisions started as an easy to use device, you just pressed a button, and a channel played. Now-a-days, Television has been transformed into “SmartTV” Full of Ads, Tracking Built-In (as a feature btw) and Bloated UI</p>
+<h2 id="optimizing-electronics">Optimizing Electronics</h2>
+<p>The reason TVs feel bloated and laggy is because the tech companies just bundle the TV with a bunch of bloat that uses more resources than necessary. You can optimize your electronic device by removing bloat and can make your TV somewhat useable. Bloat takes up space and use that precious memory and CPU power.</p>
+<h2 id="my-solution">My Solution</h2>
+<p>There can be two solutions to this problem</p>
+<ul>
+<li>Debloating SmartTV</li>
+<li>Making Your Own SmartTV</li>
+</ul>
+<h3 id="debloating-smart-tv">Debloating Smart TV</h3>
+<p>You can debloat your Smart TV by:</p>
+<ul>
+<li>Rooting (May Void Warranty But a thorough debloat process)</li>
+<li>Using Adb or a frontend for this process such as <a href="https://github.com/0x192/universal-android-debloater" target="_blank" >Universal Android Debloater</a>
+
+</li>
+</ul>
+<h3 id="making-your-own-smart-tv">Making Your Own Smart TV</h3>
+<p>Displays are way Cheaper than than SmartTVs and they can be converted into smart TVs by attaching Raspberry Pi or a similar Mini PC. Options are limitless here. You can Browse the internet, install any app you want, Transform it into your Home Cinema, Connect it to your server, stream content, etc. If you want to explore this option further. I recommend this YouTube video from <a href="https://youtu.be/-epPf7D8oMk?si=a-CuvzJ0teLIrajl" target="_blank" >Jeff Greeling</a>
+
+</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>You can optimize your TV more by debloating it or make your own one with only the services you need. It will be way faster, cheaper, and better than your current Smart TV experience.</p>
+]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Decentralized Social Media</title>
+      <link>http://192.168.100.3:1313/decentralized-social-media/</link>
+      <pubDate>Mon, 19 Jun 2023 21:05:15 +0500</pubDate>
+      
+      <guid>http://192.168.100.3:1313/decentralized-social-media/</guid>
+      <description>Is Social Media better off Decentralized?</description>
+      <content:encoded><![CDATA[<p>Social Media has changed drastically over the years.But the question is &ldquo;Can you really trust these companies?&rdquo;. Decentralized social media apps and websites are gaining traction especially because of recent policy changes of social media apps such as Reddit and Twitter. Last Year, Twitter was acquired by Elon Musk and raised API prices and changed the platform for better or worse. Similarly, Reddit also increased its API prices. Decentralized Social Media such as Mastodon, Lemmy, and Kbin gained popularity due to this.</p>
+<h2 id="advantages">Advantages</h2>
+<ul>
+<li>Decentralized Social Media is not controlled by one single company or person rather you can make your own instance of social media and interact with others. Thus, you cannot be banned from such a platform.</li>
+<li>Decentralized Social Media is also harder to fully ban in a country because there are so many instances. If one instance is banned, you can use another.</li>
+<li>If you don’t like the policies of one instance you can choose a different instance of your liking.</li>
+</ul>
+<h2 id="disadvantages">Disadvantages</h2>
+<ul>
+<li>The main disadvantage of something like Lemmy is that it is harder to moderate because of bot accounts.</li>
+<li>Fewer Users are present on these platforms.</li>
+</ul>
+]]></content:encoded>
+    </item>
+    
+  </channel>
+</rss>

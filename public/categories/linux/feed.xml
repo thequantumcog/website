@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Linux on The Brink || Tech Journal</title>
+    <link>http://192.168.100.3:1313/categories/linux/</link>
+    <description>Recent content in Linux on The Brink || Tech Journal</description>
+    <image>
+      <url>http://192.168.100.3:1313/images/logo-light.webp</url>
+      <link>http://192.168.100.3:1313/images/logo-light.webp</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 15 Nov 2023 19:15:49 +0500</lastBuildDate><atom:link href="http://192.168.100.3:1313/categories/linux/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Create Swapfile</title>
+      <link>http://192.168.100.3:1313/create-swapfile/</link>
+      <pubDate>Wed, 15 Nov 2023 19:15:49 +0500</pubDate>
+      
+      <guid>http://192.168.100.3:1313/create-swapfile/</guid>
+      <description>Swapfile and swap-partitions are rarely used now-a-days. But they still have one major use case which is hibernation. Use the following Commands to create and enable swapfile
+Commands sudo fallocate -l 6G /swapfile sudo chmod 600 /swapfile sudo mkswap /swapfile sudo swapon /swapfile then change fstab (/etc/fstab) so it automatically mounts your swap file on startup
+/swapfile none swap sw 0 0
+Afterward, check if your swap file is operating properly with htop.</description>
+      <content:encoded><![CDATA[<p>Swapfile and swap-partitions are rarely used now-a-days. But they still have one major use case which is hibernation. Use the following Commands to create and enable swapfile</p>
+<h3 id="commands">Commands</h3>
+<pre tabindex="0"><code>sudo fallocate -l 6G /swapfile
+sudo chmod 600 /swapfile
+sudo mkswap /swapfile
+sudo swapon /swapfile
+</code></pre><p>then change fstab (<strong>/etc/fstab</strong>) so it automatically mounts your swap file on startup</p>
+<p><code>/swapfile none swap sw 0 0</code></p>
+<p>Afterward, check if your swap file is operating properly with <code>htop</code>.<br>
+<strong>Swap can degrade SSD performance overtime so keep that in mind.</strong></p>
+]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Optimizing Linux Boot Time</title>
+      <link>http://192.168.100.3:1313/optimizing-boot-time/</link>
+      <pubDate>Thu, 05 Oct 2023 17:35:10 +0500</pubDate>
+      
+      <guid>http://192.168.100.3:1313/optimizing-boot-time/</guid>
+      <description>Boot your Linux Machine instantly</description>
+      <content:encoded><![CDATA[<p>Boot time is how much time it takes to boot your computer when you press your power button. A lot of things can slow down your boot on Linux. In this article we will discuss this in detail.</p>
+<h2 id="systemd-optimizations">Systemd optimizations</h2>
+<h3 id="disabling-unnecessary-services">Disabling unnecessary services</h3>
+<p><code>systemd-analyze</code> is a command available on systemd distros (which most distros are). It shows which service is using more time to load and you can disable that service. Just don&rsquo;t disable any important service or your computer won&rsquo;t boot at all.<br>
+You can also use the sub-command <code>systemd-analyze blame</code> for more clearer output.</p>
+<h3 id="using-socket-instead-of-service-for-starting-service">Using <code>.socket</code> instead of <code>.service</code> for starting service</h3>
+<p><code>.socket</code> are used to initiate the service process when its needed while <code>.service</code> starts the process on boot which costs boot time and unnecessary for services like <code>cups</code></p>
+<h2 id="slimming-down-initramfs">Slimming Down initramfs</h2>
+<h3 id="mkinitcpio">Mkinitcpio</h3>
+<h4 id="using-systemd-instead-of-busybox-on-early-init">Using Systemd instead of Busybox on early init</h4>
+<p>By default, the Mkinitcpio configuration uses the <code>base</code> and <code>udev</code> hooks for building the initramfs. Faster boot times can be achieved by replacing them with systemd</p>
+<h4 id="removing-unnecessary-hooks">Removing Unnecessary Hooks</h4>
+<p>Use <code>autodetect</code> hook for initramfs which auto detects the require hooks</p>
+<h4 id="using-lz4-compression">Using lz4 compression</h4>
+<p>lz4 compression is slightly faster than zstd or gzip compressions. You can change this in <code>/etc/mkinitcpio.conf</code></p>
+<h3 id="switch-to-dracut">Switch to Dracut</h3>
+<p>Dracut can generate unified kernel images with smaller size if configured correctly. This allows faster kernel loading.</p>
+<h2 id="using-alternative-init-system-font-size2not-recommended-for-beginnersfont">Using Alternative Init System <font size="2">(Not recommended for beginners)</font></h2>
+<p>Systemd started as an init manager but now has absorbed many services and processes. Other init systems such as runit,dinit,s6,etc. are much lighter and allows much faster boot time than systemd</p>
+<h2 id="disable-splash">Disable Splash</h2>
+<p>Disabling <strong>Bios Splash and Plymouth Splash</strong> can also speed up the boot because splash adds a delay in boot</p>
+<h2 id="disable-terminal-output">Disable Terminal Output</h2>
+<p>On some fast systems using SSDs, The tty could also be a bottlneck meaning lesser the terminal output faster will be the boot.</p>
+<h2 id="staggered-spin-up-on-hdd">Staggered Spin-up on HDD</h2>
+<p>On HDDs staggered spin can also be a problem but it can be fixed by checking dmesg output,i.e, <code>sudo dmesg | grep SSS</code>.<br>
+If there is output of this command, then add <code>libahci.ignore_sss=1</code> to kernel parameters.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>This is barely scratching the surface in terms of optimization. You can always do some more optimization. Linux is already way faster than Windows and lighter in terms of resource usage. Then on top of that you can optimize it more to get <strong>single digit boot times!</strong></p>
+]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Disable Core Dumps</title>
+      <link>http://192.168.100.3:1313/disable-core-dumps/</link>
+      <pubDate>Sun, 01 Oct 2023 09:50:44 +0500</pubDate>
+      
+      <guid>http://192.168.100.3:1313/disable-core-dumps/</guid>
+      <description>Disabling heavy core dumps that are rarely useful</description>
+      <content:encoded><![CDATA[<h2 id="setting-limits">Setting Limits</h2>
+<ul>
+<li>Edit <code>/etc/security/limits.conf</code></li>
+<li>Append the following lines</li>
+</ul>
+<pre tabindex="0"><code>* hard core 0
+* soft core 0
+</code></pre><h2 id="disabling-setgid-and-setuid-programs-from-core-dumping">Disabling setgid and setuid programs from core dumping</h2>
+<ul>
+<li>Edit <code>/etc/sysctl.d/9999-disable-core-dump.conf</code> or <code>/etc/sysctl.conf</code></li>
+<li>Append the following lines</li>
+</ul>
+<pre tabindex="0"><code>fs.suid.dumpable=0
+kernel.core_pattern= |/bin/false
+</code></pre>]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Effortless Directory Regeneration Using Pacman</title>
+      <link>http://192.168.100.3:1313/regenerating-configs-using-pacman/</link>
+      <pubDate>Tue, 04 Jul 2023 13:06:37 +0500</pubDate>
+      
+      <guid>http://192.168.100.3:1313/regenerating-configs-using-pacman/</guid>
+      <description>I was trying to edit /etc/pam.d and fix elogind on my Artix Installation. Unfortunately, It went badly and I messed up my pam.d directory.However, I Found a Fix. In pacman, It is very easy to check files owned by packages. So, We can simply generate a list of packages which have files in pam.d and reinstall them.
+Steps Remove Files to be regenerated Then, Stock Files are regenerated by using the following command: For Bash Shell pacman -S $(pacman -Ql | grep /etc/pam.</description>
+      <content:encoded><![CDATA[<p>I was trying to edit /etc/pam.d and fix elogind on my Artix Installation. Unfortunately, It went badly and I messed up my pam.d directory.However, I Found a Fix. In pacman, It is very easy to check files owned by packages. So, We can simply generate a list of packages which have files in pam.d and reinstall them.</p>
+<h2 id="steps">Steps</h2>
+<ol>
+<li>Remove Files to be regenerated</li>
+<li>Then, Stock Files are regenerated by using the following command:</li>
+</ol>
+<h3 id="for-bash-shell">For Bash Shell</h3>
+<p><code>pacman -S $(pacman -Ql | grep /etc/pam.d/$ | awk '{print $1}')</code></p>
+<h3 id="for-fish-shell">For Fish Shell</h3>
+<p><code>pacman -S (pacman -Ql | grep /etc/pam.d/\$ | awk '{print $1}')</code></p>
+<p>This is very useful specially for rolling and bleeding edge distros. Using this you can regenerate directories. If you want regenerate a specific files just substitute <code>/etc/pam.d/$</code> with the name of file.</p>
+]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Blocking Ads on Spotify</title>
+      <link>http://192.168.100.3:1313/spotx/</link>
+      <pubDate>Wed, 04 Jan 2023 13:05:38 +0500</pubDate>
+      
+      <guid>http://192.168.100.3:1313/spotx/</guid>
+      <description>Are you tired of constantly being interrupted by ads while listening to your favorite music on Spotify? If so, you&amp;rsquo;re in luck! I just stumbled upon SpotX, the Spotify ad blocker that will revolutionize the way you listen to music.
+SpotX and BlockTheSpot are simple, lightweight tools that blocks all ads on Spotify, allowing you to enjoy uninterrupted music all day long. With SpotX, you no longer have to put up with annoying ads or pay for a premium subscription to get rid of them.</description>
+      <content:encoded><![CDATA[<p><em>Are you tired of constantly being interrupted by ads while listening to your favorite music on Spotify?</em> If so, you&rsquo;re in luck! I just stumbled upon SpotX, the Spotify ad blocker that will revolutionize the way you listen to music.<br>
+SpotX and BlockTheSpot are simple, lightweight tools that blocks all ads on Spotify, allowing you to enjoy uninterrupted music all day long. With SpotX, you no longer have to put up with annoying ads or pay for a premium subscription to get rid of them. Simply download the tool, run it, and you&rsquo;re good to go.</p>
+<h3 id="prerequisite">Prerequisite</h3>
+<ul>
+<li>Spotify</li>
+<li>An internet connection</li>
+</ul>
+<h3 id="installation">Installation</h3>
+<p>Just goto to the <a href="https://github.com/SpotX-CLI/SpotX-Linux" target="_blank" ><strong>SpotX</strong></a>
+
+ and run the bash command and for Windows use <a href="https://github.com/mrpond/BlockTheSpot" target="_blank" ><strong>BlockTheSpot</strong></a>
+
+.
+<strong>However,</strong> if you have installed Spotify from Microsoft Store, It would be uninstalled and the script would automatically install the latest official version from spotify.</p>
+<p>So why wait? If you&rsquo;re tired of being interrupted by ads on Spotify, give SpotX a try and see for yourself how much better your music listening experience can be. You won&rsquo;t be disappointed!</p>
+]]></content:encoded>
+    </item>
+    
+  </channel>
+</rss>

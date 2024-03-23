@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>General on The Brink || Tech Journal</title>
+    <link>http://192.168.100.3:1313/tags/general/</link>
+    <description>Recent content in General on The Brink || Tech Journal</description>
+    <image>
+      <url>http://192.168.100.3:1313/images/logo-light.webp</url>
+      <link>http://192.168.100.3:1313/images/logo-light.webp</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 25 Nov 2023 12:48:29 +0500</lastBuildDate><atom:link href="http://192.168.100.3:1313/tags/general/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Old Internet is Dying</title>
+      <link>http://192.168.100.3:1313/old-internet-is-dying/</link>
+      <pubDate>Sat, 25 Nov 2023 12:48:29 +0500</pubDate>
+      
+      <guid>http://192.168.100.3:1313/old-internet-is-dying/</guid>
+      <description>Yes, You heard me right. But you might be wondering, &amp;ldquo;Isn&amp;rsquo;t the internet growing at an unprecedented rate?&amp;rdquo;. You might be correct but over the years, the Internet has become more centralized than ever.
+HOW? Big companies and social media control around 50% of internet traffic. People no longer have their own corner on the internet. IRC and RSS are dying. Hardly anybody notices small sites on their own unless you publish to social media.</description>
+      <content:encoded><![CDATA[<p>Yes, You heard me right. But you might be wondering, &ldquo;Isn&rsquo;t the internet growing at an unprecedented rate?&rdquo;. You might be correct but over the years, the Internet has become more centralized than ever.</p>
+<h2 id="how">HOW?</h2>
+<ul>
+<li>Big companies and social media control around 50% of internet traffic.</li>
+<li>People no longer have their own corner on the internet.</li>
+<li>IRC and RSS are dying.</li>
+<li>Hardly anybody notices small sites on their own unless you publish to social media.</li>
+<li>Small platforms are shrinking.</li>
+<li>AI is replacing the writer&rsquo;s human connection with the reader. These AI-articles are hastily written and mass-produced. The Internet is being filled with these garbage AI-written articles that are pretty useless.</li>
+<li>This era of people think that the internet is just limited to these social media sites. There are plenty of great small websites but they are becoming harder to find. People just quit because they don&rsquo;t get any traffic.</li>
+<li>Everything that was once run for fun, run because it was cool is now run for profit. Either a site exists to sell you things, sell you ideas, or sell you as a product. Things that are fun and goofy get overshadowed by the giants who can afford better SEO.
+There <strong>isn&rsquo;t any fix</strong> to this problem but <strong>it&rsquo;s just sad</strong> to see the early internet fade away.</li>
+</ul>
+]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Blocking Ads on Spotify</title>
+      <link>http://192.168.100.3:1313/spotx/</link>
+      <pubDate>Wed, 04 Jan 2023 13:05:38 +0500</pubDate>
+      
+      <guid>http://192.168.100.3:1313/spotx/</guid>
+      <description>Are you tired of constantly being interrupted by ads while listening to your favorite music on Spotify? If so, you&amp;rsquo;re in luck! I just stumbled upon SpotX, the Spotify ad blocker that will revolutionize the way you listen to music.
+SpotX and BlockTheSpot are simple, lightweight tools that blocks all ads on Spotify, allowing you to enjoy uninterrupted music all day long. With SpotX, you no longer have to put up with annoying ads or pay for a premium subscription to get rid of them.</description>
+      <content:encoded><![CDATA[<p><em>Are you tired of constantly being interrupted by ads while listening to your favorite music on Spotify?</em> If so, you&rsquo;re in luck! I just stumbled upon SpotX, the Spotify ad blocker that will revolutionize the way you listen to music.<br>
+SpotX and BlockTheSpot are simple, lightweight tools that blocks all ads on Spotify, allowing you to enjoy uninterrupted music all day long. With SpotX, you no longer have to put up with annoying ads or pay for a premium subscription to get rid of them. Simply download the tool, run it, and you&rsquo;re good to go.</p>
+<h3 id="prerequisite">Prerequisite</h3>
+<ul>
+<li>Spotify</li>
+<li>An internet connection</li>
+</ul>
+<h3 id="installation">Installation</h3>
+<p>Just goto to the <a href="https://github.com/SpotX-CLI/SpotX-Linux" target="_blank" ><strong>SpotX</strong></a>
+
+ and run the bash command and for Windows use <a href="https://github.com/mrpond/BlockTheSpot" target="_blank" ><strong>BlockTheSpot</strong></a>
+
+.
+<strong>However,</strong> if you have installed Spotify from Microsoft Store, It would be uninstalled and the script would automatically install the latest official version from spotify.</p>
+<p>So why wait? If you&rsquo;re tired of being interrupted by ads on Spotify, give SpotX a try and see for yourself how much better your music listening experience can be. You won&rsquo;t be disappointed!</p>
+]]></content:encoded>
+    </item>
+    
+  </channel>
+</rss>
