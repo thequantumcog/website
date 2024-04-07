@@ -80,11 +80,11 @@ params:
 
   socialIcons:
     - name: github
-      url: "https://github.com/ardrag0n"
-    - name: Twitter
-      url: "https://twitter.com/quantum_cog"
+      url: "https://github.com/thequantumcog"
+        # - name: Twitter
+        #url: "https://twitter.com/quantum_cog"
     - name: mastodon
-      url: "https://techhub.social/@quantum_cog"
+      url: "https://fosstodon.org/@quantumcog"
     - name: Rss
       url: "feed.xml"
 
