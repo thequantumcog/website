@@ -2,111 +2,111 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on The Brink || Tech Journal</title>
-    <link>http://192.168.100.3:1313/tags/</link>
+    <link>http://localhost:1313/tags/</link>
     <description>Recent content in Tags on The Brink || Tech Journal</description>
     <image>
-      <url>http://192.168.100.3:1313/images/logo-light.webp</url>
-      <link>http://192.168.100.3:1313/images/logo-light.webp</link>
+      <url>http://localhost:1313/images/logo-light.webp</url>
+      <link>http://localhost:1313/images/logo-light.webp</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 25 Nov 2023 12:48:29 +0500</lastBuildDate><atom:link href="http://192.168.100.3:1313/tags/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 25 Nov 2023 12:48:29 +0500</lastBuildDate><atom:link href="http://localhost:1313/tags/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>General</title>
-      <link>http://192.168.100.3:1313/tags/general/</link>
+      <link>http://localhost:1313/tags/general/</link>
       <pubDate>Sat, 25 Nov 2023 12:48:29 +0500</pubDate>
       
-      <guid>http://192.168.100.3:1313/tags/general/</guid>
+      <guid>http://localhost:1313/tags/general/</guid>
       <description></description>
       <content:encoded><![CDATA[]]></content:encoded>
     </item>
     
     <item>
       <title>Linux</title>
-      <link>http://192.168.100.3:1313/tags/linux/</link>
+      <link>http://localhost:1313/tags/linux/</link>
       <pubDate>Wed, 15 Nov 2023 19:15:49 +0500</pubDate>
       
-      <guid>http://192.168.100.3:1313/tags/linux/</guid>
+      <guid>http://localhost:1313/tags/linux/</guid>
       <description></description>
       <content:encoded><![CDATA[]]></content:encoded>
     </item>
     
     <item>
       <title>Android</title>
-      <link>http://192.168.100.3:1313/tags/android/</link>
+      <link>http://localhost:1313/tags/android/</link>
       <pubDate>Sun, 08 Oct 2023 12:30:09 +0500</pubDate>
       
-      <guid>http://192.168.100.3:1313/tags/android/</guid>
+      <guid>http://localhost:1313/tags/android/</guid>
       <description></description>
       <content:encoded><![CDATA[]]></content:encoded>
     </item>
     
     <item>
       <title>Windows</title>
-      <link>http://192.168.100.3:1313/tags/windows/</link>
+      <link>http://localhost:1313/tags/windows/</link>
       <pubDate>Fri, 06 Oct 2023 18:38:39 +0500</pubDate>
       
-      <guid>http://192.168.100.3:1313/tags/windows/</guid>
+      <guid>http://localhost:1313/tags/windows/</guid>
       <description></description>
       <content:encoded><![CDATA[]]></content:encoded>
     </item>
     
     <item>
       <title>Optimizations</title>
-      <link>http://192.168.100.3:1313/tags/optimizations/</link>
+      <link>http://localhost:1313/tags/optimizations/</link>
       <pubDate>Thu, 05 Oct 2023 17:35:10 +0500</pubDate>
       
-      <guid>http://192.168.100.3:1313/tags/optimizations/</guid>
+      <guid>http://localhost:1313/tags/optimizations/</guid>
       <description></description>
       <content:encoded><![CDATA[]]></content:encoded>
     </item>
     
     <item>
       <title>Rant</title>
-      <link>http://192.168.100.3:1313/tags/rant/</link>
+      <link>http://localhost:1313/tags/rant/</link>
       <pubDate>Mon, 02 Oct 2023 11:15:01 +0500</pubDate>
       
-      <guid>http://192.168.100.3:1313/tags/rant/</guid>
+      <guid>http://localhost:1313/tags/rant/</guid>
       <description></description>
       <content:encoded><![CDATA[]]></content:encoded>
     </item>
     
     <item>
       <title>Configs</title>
-      <link>http://192.168.100.3:1313/tags/configs/</link>
+      <link>http://localhost:1313/tags/configs/</link>
       <pubDate>Wed, 20 Sep 2023 19:08:46 +0500</pubDate>
       
-      <guid>http://192.168.100.3:1313/tags/configs/</guid>
+      <guid>http://localhost:1313/tags/configs/</guid>
       <description></description>
       <content:encoded><![CDATA[]]></content:encoded>
     </item>
     
     <item>
       <title>Git</title>
-      <link>http://192.168.100.3:1313/tags/git/</link>
+      <link>http://localhost:1313/tags/git/</link>
       <pubDate>Sun, 13 Aug 2023 18:12:39 +0500</pubDate>
       
-      <guid>http://192.168.100.3:1313/tags/git/</guid>
+      <guid>http://localhost:1313/tags/git/</guid>
       <description></description>
       <content:encoded><![CDATA[]]></content:encoded>
     </item>
     
     <item>
       <title>SysOps</title>
-      <link>http://192.168.100.3:1313/tags/sysops/</link>
+      <link>http://localhost:1313/tags/sysops/</link>
       <pubDate>Sun, 13 Aug 2023 18:12:39 +0500</pubDate>
       
-      <guid>http://192.168.100.3:1313/tags/sysops/</guid>
+      <guid>http://localhost:1313/tags/sysops/</guid>
       <description></description>
       <content:encoded><![CDATA[]]></content:encoded>
     </item>
     
     <item>
       <title>Arch Linux</title>
-      <link>http://192.168.100.3:1313/tags/arch-linux/</link>
+      <link>http://localhost:1313/tags/arch-linux/</link>
       <pubDate>Tue, 04 Jul 2023 13:06:37 +0500</pubDate>
       
-      <guid>http://192.168.100.3:1313/tags/arch-linux/</guid>
+      <guid>http://localhost:1313/tags/arch-linux/</guid>
       <description></description>
       <content:encoded><![CDATA[]]></content:encoded>
     </item>

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Optimizing Your Linux System on The Brink || Tech Journal</title>
-    <link>http://192.168.100.3:1313/series/optimizing-your-linux-system/</link>
+    <link>http://localhost:1313/series/optimizing-your-linux-system/</link>
     <description>Recent content in Optimizing Your Linux System on The Brink || Tech Journal</description>
     <image>
-      <url>http://192.168.100.3:1313/images/logo-light.webp</url>
-      <link>http://192.168.100.3:1313/images/logo-light.webp</link>
+      <url>http://localhost:1313/images/logo-light.webp</url>
+      <link>http://localhost:1313/images/logo-light.webp</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 05 Oct 2023 17:35:10 +0500</lastBuildDate><atom:link href="http://192.168.100.3:1313/series/optimizing-your-linux-system/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 05 Oct 2023 17:35:10 +0500</lastBuildDate><atom:link href="http://localhost:1313/series/optimizing-your-linux-system/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Optimizing Linux Boot Time</title>
-      <link>http://192.168.100.3:1313/optimizing-boot-time/</link>
+      <link>http://localhost:1313/optimizing-boot-time/</link>
       <pubDate>Thu, 05 Oct 2023 17:35:10 +0500</pubDate>
       
-      <guid>http://192.168.100.3:1313/optimizing-boot-time/</guid>
+      <guid>http://localhost:1313/optimizing-boot-time/</guid>
       <description>Boot your Linux Machine instantly</description>
       <content:encoded><![CDATA[<p>Boot time is how much time it takes to boot your computer when you press your power button. A lot of things can slow down your boot on Linux. In this article we will discuss this in detail.</p>
 <h2 id="systemd-optimizations">Systemd optimizations</h2>
@@ -35,7 +35,7 @@ You can also use the sub-command <code>systemd-analyze blame</code> for more cle
 <p>lz4 compression is slightly faster than zstd or gzip compressions. You can change this in <code>/etc/mkinitcpio.conf</code></p>
 <h3 id="switch-to-dracut">Switch to Dracut</h3>
 <p>Dracut can generate unified kernel images with smaller size if configured correctly. This allows faster kernel loading.</p>
-<h2 id="using-alternative-init-system-font-size2not-recommended-for-beginnersfont">Using Alternative Init System <font size="2">(Not recommended for beginners)</font></h2>
+<h2 id="using-alternative-init-system-not-recommended-for-beginners">Using Alternative Init System <font size="2">(Not recommended for beginners)</font></h2>
 <p>Systemd started as an init manager but now has absorbed many services and processes. Other init systems such as runit,dinit,s6,etc. are much lighter and allows much faster boot time than systemd</p>
 <h2 id="disable-splash">Disable Splash</h2>
 <p>Disabling <strong>Bios Splash and Plymouth Splash</strong> can also speed up the boot because splash adds a delay in boot</p>

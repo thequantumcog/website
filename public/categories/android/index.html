@@ -9,30 +9,33 @@
 <meta name="keywords" content="">
 <meta name="description" content="I am passionate for quirky hobby distros to fine-tuning servers. Join me on this exciting journey of unraveling the intricacies of the Computer world. Let&#39;s dive into the realm of Technology, one command at a time">
 <meta name="author" content="ar0177417">
-<link rel="canonical" href="http://192.168.100.3:1313/categories/android/">
-<link crossorigin="anonymous" href="http://192.168.100.3:1313/assets/css/stylesheet.min.fb29f64a0036f8fca84ff8d60d136d7f2dfe0b892d8bf3d5d42ab1e09c3eba20.css" integrity="sha256-&#43;yn2SgA2&#43;PyoT/jWDRNtfy3&#43;C4kti/PV1Cqx4Jw&#43;uiA=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://192.168.100.3:1313/favicon.ico">
-<link rel="apple-touch-icon" href="http://192.168.100.3:1313/apple-touch-icon.png">
-<link rel="alternate" type="application/rss+xml" href="http://192.168.100.3:1313/categories/android/feed.xml">
-<link rel="alternate" hreflang="en" href="http://192.168.100.3:1313/categories/android/">
+<link rel="canonical" href="http://localhost:1313/categories/android/">
+<link crossorigin="anonymous" href="http://localhost:1313/assets/css/stylesheet.min.76ef7d251488e9b8f7855abee95e94a87071f1cfcec99d9c540581fda3f04864.css" integrity="sha256-du99JRSI6bj3hVq&#43;6V6UqHBx8c/OyZ2cVAWB/aPwSGQ=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/categories/android/feed.xml">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/categories/android/">
 
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-GQLDGQF9G6"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-GQLDGQF9G6');
+        }
+      </script>
 <meta name="twitter:title" content="Android | The Brink || Tech Journal" />
 <meta name="twitter:description" content="I am passionate for quirky hobby distros to fine-tuning servers. Join me on this exciting journey of unraveling the intricacies of the Computer world. Let&#39;s dive into the realm of Technology, one command at a time" />
 <meta property="og:title" content="Android | The Brink || Tech Journal" />
 <meta property="og:description" content="I am passionate for quirky hobby distros to fine-tuning servers. Join me on this exciting journey of unraveling the intricacies of the Computer world. Let&#39;s dive into the realm of Technology, one command at a time" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="http://192.168.100.3:1313/categories/android/" />
-
-
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-GQLDGQF9G6"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-GQLDGQF9G6');
-</script>
+<meta property="og:url" content="http://localhost:1313/categories/android/" />
 
 
 <noscript>
@@ -158,8 +161,8 @@ function toggleThemeListener() {
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://192.168.100.3:1313/" accesskey="h" title=" (Alt + H)">
-                    <img id="siteLogo" src="http://192.168.100.3:1313/images/logo-light.webp" alt="logo" aria-label="logo"
+            <a href="http://localhost:1313/" accesskey="h" title=" (Alt + H)">
+                    <img id="siteLogo" src="http://localhost:1313/images/logo-light.webp" alt="logo" aria-label="logo"
                     height="35">
                     <script>
                         if (isDarkTheme()) {
@@ -172,22 +175,22 @@ function toggleThemeListener() {
                     </div>
         <ul id="menu">
             <li>
-                <a href="http://192.168.100.3:1313/search/" title="Search (Alt &#43; /)"data-no-instant accesskey=/
+                <a href="http://localhost:1313/search/" title="Search (Alt &#43; /)"data-no-instant accesskey=/
                 >Search
                 </a>
             </li>
             <li>
-                <a href="http://192.168.100.3:1313/categories/" title="Categories" class="active"
+                <a href="http://localhost:1313/categories/" title="Categories" class="active"
                 >Categories
                 </a>
             </li>
             <li>
-                <a href="http://192.168.100.3:1313/archives/" title="Archives"
+                <a href="http://localhost:1313/archives/" title="Archives"
                 >Archives
                 </a>
             </li>
             <li>
-                <a href="http://192.168.100.3:1313/tags/" title="Tags"
+                <a href="http://localhost:1313/tags/" title="Tags"
                 >Tags
                 </a>
             </li>
@@ -223,7 +226,7 @@ function toggleThemeListener() {
     category: Android</h1><div class="inline-links">
   
   
-  <span><a href="http://192.168.100.3:1313/categories/android/feed.xml" target="_blank">RSS</a></span></div>
+  <span><a href="http://localhost:1313/categories/android/feed.xml" target="_blank">RSS</a></span></div>
 </header>
 
 
@@ -243,7 +246,9 @@ Fetch Apks of all Installed Apps for APP in $(adb shell pm list packages -3 -f) 
 Getting Partitions Imgs Backup adb pull /dev/block/by-name/SYSTEM system.img
 Restore adb push system.img /sdcard/
 Then
-dd if=/sdcard/system.img of=/dev/block/by-name/SYSTEM...</p>
+dd if=/sdcard/system.img of=/dev/block/by-name/SYSTEM
+Logcat adb logcat -v color
+...</p>
   </section>
   
   <footer class="entry-footer "><span class="meta-item">
@@ -254,11 +259,11 @@ dd if=/sdcard/system.img of=/dev/block/by-name/SYSTEM...</p>
   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
   <span>1 min</span></span><span class="meta-item">
   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon" style="user-select: text;"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z" style="user-select: text;"></path><line x1="7" y1="7" x2="7" y2="7" style="user-select: text;"></line></svg>
-  <span class="post-tags"><a href="http://192.168.100.3:1313/tags/android/">Android</a></span></span>
+  <span class="post-tags"><a href="http://localhost:1313/tags/android/">Android</a></span></span>
 
 
 </footer>
-  <a class="entry-link" aria-label="post link to Useful Adb Commands" href="http://192.168.100.3:1313/adb-tricks/"></a>
+  <a class="entry-link" aria-label="post link to Useful Adb Commands" href="http://localhost:1313/adb-tricks/"></a>
 </article>
 
 <article class="post-entry tag-entry"> 
@@ -268,7 +273,7 @@ dd if=/sdcard/system.img of=/dev/block/by-name/SYSTEM...</p>
   </header>
   
   <section class="entry-content ">
-    <p>Build.Prop Tweaks # enable software keys qemu.hw.mainkeys=0 # Quick Power On ro.config.hw_quickpoweron=true # Disable Error reporting profiler.force_disable_err_rpt=1 profiler.force_disable_ulog=1 ro.kernel.android.checkjni=0 ro.kernel.checkjni=0 # Disable GPS Entirely ro.com.google.locationfeatures=0 ro.com.google.networklocation=0 # Advanced (Not Recommended) ro.config.nocheckin=1 persist.android.strictmode=0 ro.secure=0 dalvik.vm.verify-bytecode=false dalvik.vm.dexopt-flags=m=y,v=n,o=v logcat.live=disable ro.boot.selinux=permissive androidboot.selinux=permissive persist.android.strictmode=0 persist.selinux.enforcing=0 ro.build.selinux.enforce=0 security.perf_harden=0 selinux.reload_policy=0 selinux.sec.restorecon=0 ro.adb.secure=0 # Disable Boot Animation debug.sf.nobootanimation=1 # Networking net.ipv6.conf.all.disable_ipv6=1 net.ipv6.conf.default.disable_ipv6=1 # Disable SIM Functionality persist.telephony.support.ipv6=0 persist.radio.apm_sim_not_pwdn=0 # Disable Sensors ro.qti.sensors.pedometer=false ro.qti.sensors.step_counter=false ro.qti.sensors.step_detector=false ro.qti.sensors.facing=false ro.qti.sensors.pick_up=false keyguard.no_require_sim=true # Disable Audio Warnings audio....</p>
+    <p>Build.Prop Tweaks # enable software keys qemu.hw.mainkeys=0 # Quick Power On ro.config.hw_quickpoweron=true # Disable Error reporting profiler.force_disable_err_rpt=1 profiler.force_disable_ulog=1 ro.kernel.android.checkjni=0 ro.kernel.checkjni=0 # Disable GPS Entirely ro.com.google.locationfeatures=0 ro.com.google.networklocation=0 # Advanced (Not Recommended) ro.config.nocheckin=1 persist.android.strictmode=0 ro.secure=0 dalvik.vm.verify-bytecode=false dalvik.vm.dexopt-flags=m=y,v=n,o=v logcat.live=disable ro.boot.selinux=permissive androidboot.selinux=permissive persist.android.strictmode=0 persist.selinux.enforcing=0 ro.build.selinux.enforce=0 security.perf_harden=0 selinux.reload_policy=0 selinux.sec.restorecon=0 ro.adb.secure=0 # Disable Boot Animation debug.sf.nobootanimation=1 # Networking net.ipv6.conf.all.disable_ipv6=1 net.ipv6.conf.default.disable_ipv6=1 # Disable SIM Functionality persist.telephony.support.ipv6=0 persist.radio.apm_sim_not_pwdn=0 # Disable Sensors ro.qti.sensors.pedometer=false ro.qti.sensors.step_counter=false ro.qti.sensors.step_detector=false ro.qti.sensors.facing=false ro.qti.sensors.pick_up=false keyguard.no_require_sim=true # Disable Audio Warnings audio.safemedia.bypass=true audio.safemedia.force=false # Disable Stupid port shuffling in wireless Adb (Android 10 and above) service.adb.tls.port=5555 service.adb.tcp.port=5555 </p>
   </section>
   
   <footer class="entry-footer "><span class="meta-item">
@@ -279,16 +284,16 @@ dd if=/sdcard/system.img of=/dev/block/by-name/SYSTEM...</p>
   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
   <span>1 min</span></span><span class="meta-item">
   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon" style="user-select: text;"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z" style="user-select: text;"></path><line x1="7" y1="7" x2="7" y2="7" style="user-select: text;"></line></svg>
-  <span class="post-tags"><a href="http://192.168.100.3:1313/tags/android/">Android</a><a href="http://192.168.100.3:1313/tags/optimizations/">Optimizations</a></span></span>
+  <span class="post-tags"><a href="http://localhost:1313/tags/android/">Android</a><a href="http://localhost:1313/tags/optimizations/">Optimizations</a></span></span>
 
 
 </footer>
-  <a class="entry-link" aria-label="post link to Build.prop Tweaks" href="http://192.168.100.3:1313/build-prop-tweaks/"></a>
+  <a class="entry-link" aria-label="post link to Build.prop Tweaks" href="http://localhost:1313/build-prop-tweaks/"></a>
 </article>
     </main>
     
 <footer class="footer">
-  <span>&copy; 2024 <a href="http://192.168.100.3:1313/">The Brink</a></span>
+  <span>&copy; 2025 <a href="http://localhost:1313/">The Brink</a></span>
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
@@ -369,7 +374,7 @@ dd if=/sdcard/system.img of=/dev/block/by-name/SYSTEM...</p>
 
 
 
-<script src="http://192.168.100.3:1313/js/medium-zoom.min.js" data-no-instant
+<script src="http://localhost:1313/js/medium-zoom.min.js" data-no-instant
 ></script>
 </body>
 
