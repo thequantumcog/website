@@ -5,7 +5,7 @@ date: 2023-11-25T12:48:29+05:00
 url: "/old-internet-is-dying/"
 tags: 
     -  General
-draft: false
+draft: true
 ---
 Yes, You heard me right. But you might be wondering, "Isn't the internet growing at an unprecedented rate?". You might be correct but over the years, the Internet has become more centralized than ever.  
 ## HOW?
