@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Windows on The Brink || Tech Journal</title>
-    <link>http://localhost:1313/tags/windows/</link>
+    <link>https://thebrink.netlify.app/tags/windows/</link>
     <description>Recent content in Windows on The Brink || Tech Journal</description>
     <image>
-      <url>http://localhost:1313/images/logo-light.webp</url>
-      <link>http://localhost:1313/images/logo-light.webp</link>
+      <url>https://thebrink.netlify.app/images/logo-light.webp</url>
+      <link>https://thebrink.netlify.app/images/logo-light.webp</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 06 Oct 2023 18:38:39 +0500</lastBuildDate><atom:link href="http://localhost:1313/tags/windows/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 06 Oct 2023 18:38:39 +0500</lastBuildDate><atom:link href="https://thebrink.netlify.app/tags/windows/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Installing Windows Using Only CMD</title>
-      <link>http://localhost:1313/shenanigan-free-windows-installation/</link>
+      <link>https://thebrink.netlify.app/shenanigan-free-windows-installation/</link>
       <pubDate>Fri, 06 Oct 2023 18:38:39 +0500</pubDate>
       
-      <guid>http://localhost:1313/shenanigan-free-windows-installation/</guid>
+      <guid>https://thebrink.netlify.app/shenanigan-free-windows-installation/</guid>
       <description>The Real Way to Install Windows!!</description>
       <content:encoded><![CDATA[<h2 id="the-installer">The Installer</h2>
 <p>Download and Launch the Windows Installer.<br>
@@ -73,10 +73,10 @@ Select <code>Continue with limited Setup</code> and name the device and create a
     
     <item>
       <title>Blocking Ads on Spotify</title>
-      <link>http://localhost:1313/spotx/</link>
+      <link>https://thebrink.netlify.app/spotx/</link>
       <pubDate>Wed, 04 Jan 2023 13:05:38 +0500</pubDate>
       
-      <guid>http://localhost:1313/spotx/</guid>
+      <guid>https://thebrink.netlify.app/spotx/</guid>
       <description>&lt;p&gt;&lt;em&gt;Are you tired of constantly being interrupted by ads while listening to your favorite music on Spotify?&lt;/em&gt; If so, you&amp;rsquo;re in luck! I just stumbled upon SpotX, the Spotify ad blocker that will revolutionize the way you listen to music.&lt;br&gt;
 SpotX and BlockTheSpot are simple, lightweight tools that blocks all ads on Spotify, allowing you to enjoy uninterrupted music all day long. With SpotX, you no longer have to put up with annoying ads or pay for a premium subscription to get rid of them. Simply download the tool, run it, and you&amp;rsquo;re good to go.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p><em>Are you tired of constantly being interrupted by ads while listening to your favorite music on Spotify?</em> If so, you&rsquo;re in luck! I just stumbled upon SpotX, the Spotify ad blocker that will revolutionize the way you listen to music.<br>

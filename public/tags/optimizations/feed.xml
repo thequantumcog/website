@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Optimizations on The Brink || Tech Journal</title>
-    <link>http://localhost:1313/tags/optimizations/</link>
+    <link>https://thebrink.netlify.app/tags/optimizations/</link>
     <description>Recent content in Optimizations on The Brink || Tech Journal</description>
     <image>
-      <url>http://localhost:1313/images/logo-light.webp</url>
-      <link>http://localhost:1313/images/logo-light.webp</link>
+      <url>https://thebrink.netlify.app/images/logo-light.webp</url>
+      <link>https://thebrink.netlify.app/images/logo-light.webp</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 05 Oct 2023 17:35:10 +0500</lastBuildDate><atom:link href="http://localhost:1313/tags/optimizations/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 05 Oct 2023 17:35:10 +0500</lastBuildDate><atom:link href="https://thebrink.netlify.app/tags/optimizations/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Optimizing Linux Boot Time</title>
-      <link>http://localhost:1313/optimizing-boot-time/</link>
+      <link>https://thebrink.netlify.app/optimizing-boot-time/</link>
       <pubDate>Thu, 05 Oct 2023 17:35:10 +0500</pubDate>
       
-      <guid>http://localhost:1313/optimizing-boot-time/</guid>
+      <guid>https://thebrink.netlify.app/optimizing-boot-time/</guid>
       <description>Boot your Linux Machine instantly</description>
       <content:encoded><![CDATA[<p>Boot time is how much time it takes to boot your computer when you press your power button. A lot of things can slow down your boot on Linux. In this article we will discuss this in detail.</p>
 <h2 id="systemd-optimizations">Systemd optimizations</h2>
@@ -51,10 +51,10 @@ If there is output of this command, then add <code>libahci.ignore_sss=1</code> t
     
     <item>
       <title>Disable Core Dumps</title>
-      <link>http://localhost:1313/disable-core-dumps/</link>
+      <link>https://thebrink.netlify.app/disable-core-dumps/</link>
       <pubDate>Sun, 01 Oct 2023 09:50:44 +0500</pubDate>
       
-      <guid>http://localhost:1313/disable-core-dumps/</guid>
+      <guid>https://thebrink.netlify.app/disable-core-dumps/</guid>
       <description>Disabling heavy core dumps that are rarely useful</description>
       <content:encoded><![CDATA[<h2 id="setting-limits">Setting Limits</h2>
 <ul>
@@ -75,10 +75,10 @@ kernel.core_pattern= |/bin/false
     
     <item>
       <title>Build.prop Tweaks</title>
-      <link>http://localhost:1313/build-prop-tweaks/</link>
+      <link>https://thebrink.netlify.app/build-prop-tweaks/</link>
       <pubDate>Fri, 29 Sep 2023 10:49:34 +0500</pubDate>
       
-      <guid>http://localhost:1313/build-prop-tweaks/</guid>
+      <guid>https://thebrink.netlify.app/build-prop-tweaks/</guid>
       <description>Making Android Better</description>
       <content:encoded><![CDATA[<h2 id="buildprop-tweaks">Build.Prop Tweaks</h2>
 <pre tabindex="0"><code># enable software keys

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Series on The Brink || Tech Journal</title>
-    <link>http://localhost:1313/series/</link>
+    <link>https://thebrink.netlify.app/series/</link>
     <description>Recent content in Series on The Brink || Tech Journal</description>
     <image>
-      <url>http://localhost:1313/images/logo-light.webp</url>
-      <link>http://localhost:1313/images/logo-light.webp</link>
+      <url>https://thebrink.netlify.app/images/logo-light.webp</url>
+      <link>https://thebrink.netlify.app/images/logo-light.webp</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 05 Oct 2023 17:35:10 +0500</lastBuildDate><atom:link href="http://localhost:1313/series/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 05 Oct 2023 17:35:10 +0500</lastBuildDate><atom:link href="https://thebrink.netlify.app/series/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Optimizing Your Linux System</title>
-      <link>http://localhost:1313/series/optimizing-your-linux-system/</link>
+      <link>https://thebrink.netlify.app/series/optimizing-your-linux-system/</link>
       <pubDate>Thu, 05 Oct 2023 17:35:10 +0500</pubDate>
       
-      <guid>http://localhost:1313/series/optimizing-your-linux-system/</guid>
+      <guid>https://thebrink.netlify.app/series/optimizing-your-linux-system/</guid>
       <description></description>
       <content:encoded><![CDATA[]]></content:encoded>
     </item>

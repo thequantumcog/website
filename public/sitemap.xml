@@ -2,116 +2,104 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/make-gsi-rw/</loc>
+    <loc>https://thebrink.netlify.app/make-gsi-rw/</loc>
     <lastmod>2024-02-07T17:00:35+05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>https://thebrink.netlify.app/posts/</loc>
     <lastmod>2024-02-07T17:00:35+05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://thebrink.netlify.app/</loc>
     <lastmod>2024-02-07T17:00:35+05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/general/</loc>
-    <lastmod>2023-11-25T12:48:29+05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/old-internet-is-dying/</loc>
-    <lastmod>2023-11-25T12:48:29+05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2023-11-25T12:48:29+05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://thebrink.netlify.app/categories/</loc>
     <lastmod>2023-11-15T19:15:49+05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/create-swapfile/</loc>
+    <loc>https://thebrink.netlify.app/create-swapfile/</loc>
     <lastmod>2023-11-15T19:15:49+05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/linux/</loc>
+    <loc>https://thebrink.netlify.app/categories/linux/</loc>
     <lastmod>2023-11-15T19:15:49+05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/linux/</loc>
+    <loc>https://thebrink.netlify.app/tags/linux/</loc>
     <lastmod>2023-11-15T19:15:49+05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/using-fingerprint-for-sudo-password/</loc>
+    <loc>https://thebrink.netlify.app/tags/</loc>
+    <lastmod>2023-11-15T19:15:49+05:00</lastmod>
+  </url><url>
+    <loc>https://thebrink.netlify.app/using-fingerprint-for-sudo-password/</loc>
     <lastmod>2023-10-10T12:08:53+05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/android/</loc>
+    <loc>https://thebrink.netlify.app/categories/android/</loc>
     <lastmod>2023-10-08T12:30:09+05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/android/</loc>
+    <loc>https://thebrink.netlify.app/tags/android/</loc>
     <lastmod>2023-10-08T12:30:09+05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/adb-tricks/</loc>
+    <loc>https://thebrink.netlify.app/adb-tricks/</loc>
     <lastmod>2023-10-08T12:30:09+05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/shenanigan-free-windows-installation/</loc>
+    <loc>https://thebrink.netlify.app/shenanigan-free-windows-installation/</loc>
     <lastmod>2023-10-06T18:38:39+05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/windows/</loc>
+    <loc>https://thebrink.netlify.app/categories/windows/</loc>
     <lastmod>2023-10-06T18:38:39+05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/windows/</loc>
+    <loc>https://thebrink.netlify.app/tags/windows/</loc>
     <lastmod>2023-10-06T18:38:39+05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/optimizations/</loc>
+    <loc>https://thebrink.netlify.app/tags/optimizations/</loc>
     <lastmod>2023-10-05T17:35:10+05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/optimizing-boot-time/</loc>
+    <loc>https://thebrink.netlify.app/optimizing-boot-time/</loc>
     <lastmod>2023-10-05T17:35:10+05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/series/optimizing-your-linux-system/</loc>
+    <loc>https://thebrink.netlify.app/series/optimizing-your-linux-system/</loc>
     <lastmod>2023-10-05T17:35:10+05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/series/</loc>
+    <loc>https://thebrink.netlify.app/series/</loc>
     <lastmod>2023-10-05T17:35:10+05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/rant/</loc>
+    <loc>https://thebrink.netlify.app/tags/rant/</loc>
     <lastmod>2023-10-02T11:15:01+05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/making-a-real-smart-tv/</loc>
+    <loc>https://thebrink.netlify.app/making-a-real-smart-tv/</loc>
     <lastmod>2023-10-02T11:15:01+05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/disable-core-dumps/</loc>
+    <loc>https://thebrink.netlify.app/disable-core-dumps/</loc>
     <lastmod>2023-10-01T09:50:44+05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/build-prop-tweaks/</loc>
+    <loc>https://thebrink.netlify.app/build-prop-tweaks/</loc>
     <lastmod>2023-09-29T10:49:34+05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/configs/</loc>
-    <lastmod>2023-09-20T19:08:46+05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/my-configs/</loc>
-    <lastmod>2023-09-20T19:08:46+05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/2023/streaming-mega-files-directly/</loc>
-    <lastmod>2023-09-09T09:14:45+05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/autologin-linux/</loc>
+    <loc>https://thebrink.netlify.app/autologin-linux/</loc>
     <lastmod>2023-09-09T08:45:55+05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/git-cheatsheat/</loc>
+    <loc>https://thebrink.netlify.app/git-cheatsheat/</loc>
     <lastmod>2023-08-13T18:12:39+05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/git/</loc>
+    <loc>https://thebrink.netlify.app/tags/git/</loc>
     <lastmod>2023-08-13T18:12:39+05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/sysops/</loc>
+    <loc>https://thebrink.netlify.app/tags/sysops/</loc>
     <lastmod>2023-08-13T18:12:39+05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/arch-linux/</loc>
+    <loc>https://thebrink.netlify.app/tags/arch-linux/</loc>
     <lastmod>2023-07-04T13:06:37+05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/regenerating-configs-using-pacman/</loc>
+    <loc>https://thebrink.netlify.app/regenerating-configs-using-pacman/</loc>
     <lastmod>2023-07-04T13:06:37+05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/decentralized-social-media/</loc>
+    <loc>https://thebrink.netlify.app/decentralized-social-media/</loc>
     <lastmod>2023-06-19T21:05:15+05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/spotx/</loc>
+    <loc>https://thebrink.netlify.app/spotx/</loc>
     <lastmod>2023-01-04T13:05:38+05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/archives/</loc>
+    <loc>https://thebrink.netlify.app/tags/general/</loc>
+    <lastmod>2023-01-04T13:05:38+05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/search/</loc>
+    <loc>https://thebrink.netlify.app/archives/</loc>
+  </url><url>
+    <loc>https://thebrink.netlify.app/search/</loc>
   </url>
 </urlset>

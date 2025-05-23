@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>The Brink || Tech Journal</title>
-    <link>http://localhost:1313/</link>
+    <link>https://thebrink.netlify.app/</link>
     <description>Recent content on The Brink || Tech Journal</description>
     <image>
-      <url>http://localhost:1313/images/logo-light.webp</url>
-      <link>http://localhost:1313/images/logo-light.webp</link>
+      <url>https://thebrink.netlify.app/images/logo-light.webp</url>
+      <link>https://thebrink.netlify.app/images/logo-light.webp</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 07 Feb 2024 17:00:35 +0500</lastBuildDate><atom:link href="http://localhost:1313/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 07 Feb 2024 17:00:35 +0500</lastBuildDate><atom:link href="https://thebrink.netlify.app/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Make GSI RW (For Ext4)</title>
-      <link>http://localhost:1313/make-gsi-rw/</link>
+      <link>https://thebrink.netlify.app/make-gsi-rw/</link>
       <pubDate>Wed, 07 Feb 2024 17:00:35 +0500</pubDate>
       
-      <guid>http://localhost:1313/make-gsi-rw/</guid>
+      <guid>https://thebrink.netlify.app/make-gsi-rw/</guid>
       <description>Get back the write access to System Partition</description>
       <content:encoded><![CDATA[<h2 id="with-twrpofrp">With TWRP/OFRP</h2>
 <pre tabindex="0"><code>adb shell
@@ -37,46 +37,11 @@ e2fsck -E unshare_blocks /dev/block/by-name-system
     </item>
     
     <item>
-      <title>Old Internet is Dying</title>
-      <link>http://localhost:1313/old-internet-is-dying/</link>
-      <pubDate>Sat, 25 Nov 2023 12:48:29 +0500</pubDate>
-      
-      <guid>http://localhost:1313/old-internet-is-dying/</guid>
-      <description>&lt;p&gt;Yes, You heard me right. But you might be wondering, &amp;ldquo;Isn&amp;rsquo;t the internet growing at an unprecedented rate?&amp;rdquo;. You might be correct but over the years, the Internet has become more centralized than ever.&lt;/p&gt;
-&lt;h2 id=&#34;how&#34;&gt;HOW?&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Big companies and social media control around 50% of internet traffic.&lt;/li&gt;
-&lt;li&gt;People no longer have their own corner on the internet.&lt;/li&gt;
-&lt;li&gt;IRC and RSS are dying.&lt;/li&gt;
-&lt;li&gt;Hardly anybody notices small sites on their own unless you publish to social media.&lt;/li&gt;
-&lt;li&gt;Small platforms are shrinking.&lt;/li&gt;
-&lt;li&gt;AI is replacing the writer&amp;rsquo;s human connection with the reader. These AI-articles are hastily written and mass-produced. The Internet is being filled with these garbage AI-written articles that are pretty useless.&lt;/li&gt;
-&lt;li&gt;This era of people think that the internet is just limited to these social media sites. There are plenty of great small websites but they are becoming harder to find. People just quit because they don&amp;rsquo;t get any traffic.&lt;/li&gt;
-&lt;li&gt;Everything that was once run for fun, run because it was cool is now run for profit. Either a site exists to sell you things, sell you ideas, or sell you as a product. Things that are fun and goofy get overshadowed by the giants who can afford better SEO.
-There &lt;strong&gt;isn&amp;rsquo;t any fix&lt;/strong&gt; to this problem but &lt;strong&gt;it&amp;rsquo;s just sad&lt;/strong&gt; to see the early internet fade away.&lt;/li&gt;
-&lt;/ul&gt;</description>
-      <content:encoded><![CDATA[<p>Yes, You heard me right. But you might be wondering, &ldquo;Isn&rsquo;t the internet growing at an unprecedented rate?&rdquo;. You might be correct but over the years, the Internet has become more centralized than ever.</p>
-<h2 id="how">HOW?</h2>
-<ul>
-<li>Big companies and social media control around 50% of internet traffic.</li>
-<li>People no longer have their own corner on the internet.</li>
-<li>IRC and RSS are dying.</li>
-<li>Hardly anybody notices small sites on their own unless you publish to social media.</li>
-<li>Small platforms are shrinking.</li>
-<li>AI is replacing the writer&rsquo;s human connection with the reader. These AI-articles are hastily written and mass-produced. The Internet is being filled with these garbage AI-written articles that are pretty useless.</li>
-<li>This era of people think that the internet is just limited to these social media sites. There are plenty of great small websites but they are becoming harder to find. People just quit because they don&rsquo;t get any traffic.</li>
-<li>Everything that was once run for fun, run because it was cool is now run for profit. Either a site exists to sell you things, sell you ideas, or sell you as a product. Things that are fun and goofy get overshadowed by the giants who can afford better SEO.
-There <strong>isn&rsquo;t any fix</strong> to this problem but <strong>it&rsquo;s just sad</strong> to see the early internet fade away.</li>
-</ul>
-]]></content:encoded>
-    </item>
-    
-    <item>
       <title>Create Swapfile</title>
-      <link>http://localhost:1313/create-swapfile/</link>
+      <link>https://thebrink.netlify.app/create-swapfile/</link>
       <pubDate>Wed, 15 Nov 2023 19:15:49 +0500</pubDate>
       
-      <guid>http://localhost:1313/create-swapfile/</guid>
+      <guid>https://thebrink.netlify.app/create-swapfile/</guid>
       <description>&lt;p&gt;Swapfile and swap-partitions are rarely used now-a-days. But they still have one major use case which is hibernation. Use the following Commands to create and enable swapfile&lt;/p&gt;
 &lt;h3 id=&#34;commands&#34;&gt;Commands&lt;/h3&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo fallocate -l 6G /swapfile
@@ -102,10 +67,10 @@ sudo swapon /swapfile
     
     <item>
       <title>Using Fingerprint for Sudo Password</title>
-      <link>http://localhost:1313/using-fingerprint-for-sudo-password/</link>
+      <link>https://thebrink.netlify.app/using-fingerprint-for-sudo-password/</link>
       <pubDate>Tue, 10 Oct 2023 12:08:53 +0500</pubDate>
       
-      <guid>http://localhost:1313/using-fingerprint-for-sudo-password/</guid>
+      <guid>https://thebrink.netlify.app/using-fingerprint-for-sudo-password/</guid>
       <description>Never type a sudo password again!</description>
       <content:encoded><![CDATA[<p>Typing sudo password again and again becomes very frustrating at times. But there is a solution to this madness.
 You can use fingerprint for this process. This post has been inspired by krdrag0n&rsquo;s tweet.</p>
@@ -137,10 +102,10 @@ auth required pam_deny.so
     
     <item>
       <title>Useful Adb Commands</title>
-      <link>http://localhost:1313/adb-tricks/</link>
+      <link>https://thebrink.netlify.app/adb-tricks/</link>
       <pubDate>Sun, 08 Oct 2023 12:30:09 +0500</pubDate>
       
-      <guid>http://localhost:1313/adb-tricks/</guid>
+      <guid>https://thebrink.netlify.app/adb-tricks/</guid>
       <description>Cool adb tricks to save you some time</description>
       <content:encoded><![CDATA[<h2 id="backup-apks">Backup Apks</h2>
 <h3 id="get-list-of-installed-apps">Get list of installed apps</h3>
@@ -166,10 +131,10 @@ Then<br>
     
     <item>
       <title>Installing Windows Using Only CMD</title>
-      <link>http://localhost:1313/shenanigan-free-windows-installation/</link>
+      <link>https://thebrink.netlify.app/shenanigan-free-windows-installation/</link>
       <pubDate>Fri, 06 Oct 2023 18:38:39 +0500</pubDate>
       
-      <guid>http://localhost:1313/shenanigan-free-windows-installation/</guid>
+      <guid>https://thebrink.netlify.app/shenanigan-free-windows-installation/</guid>
       <description>The Real Way to Install Windows!!</description>
       <content:encoded><![CDATA[<h2 id="the-installer">The Installer</h2>
 <p>Download and Launch the Windows Installer.<br>
@@ -226,10 +191,10 @@ Select <code>Continue with limited Setup</code> and name the device and create a
     
     <item>
       <title>Optimizing Linux Boot Time</title>
-      <link>http://localhost:1313/optimizing-boot-time/</link>
+      <link>https://thebrink.netlify.app/optimizing-boot-time/</link>
       <pubDate>Thu, 05 Oct 2023 17:35:10 +0500</pubDate>
       
-      <guid>http://localhost:1313/optimizing-boot-time/</guid>
+      <guid>https://thebrink.netlify.app/optimizing-boot-time/</guid>
       <description>Boot your Linux Machine instantly</description>
       <content:encoded><![CDATA[<p>Boot time is how much time it takes to boot your computer when you press your power button. A lot of things can slow down your boot on Linux. In this article we will discuss this in detail.</p>
 <h2 id="systemd-optimizations">Systemd optimizations</h2>
@@ -264,10 +229,10 @@ If there is output of this command, then add <code>libahci.ignore_sss=1</code> t
     
     <item>
       <title>The Problem With Smart Televisions</title>
-      <link>http://localhost:1313/making-a-real-smart-tv/</link>
+      <link>https://thebrink.netlify.app/making-a-real-smart-tv/</link>
       <pubDate>Mon, 02 Oct 2023 11:15:01 +0500</pubDate>
       
-      <guid>http://localhost:1313/making-a-real-smart-tv/</guid>
+      <guid>https://thebrink.netlify.app/making-a-real-smart-tv/</guid>
       <description>&lt;h2 id=&#34;the-problem&#34;&gt;The Problem&lt;/h2&gt;
 &lt;p&gt;Televisions started as an easy to use device, you just pressed a button, and a channel played. Now-a-days, Television has been transformed into “SmartTV” Full of Ads, Tracking Built-In (as a feature btw) and Bloated UI&lt;/p&gt;
 &lt;h2 id=&#34;optimizing-electronics&#34;&gt;Optimizing Electronics&lt;/h2&gt;
@@ -301,10 +266,10 @@ If there is output of this command, then add <code>libahci.ignore_sss=1</code> t
     
     <item>
       <title>Disable Core Dumps</title>
-      <link>http://localhost:1313/disable-core-dumps/</link>
+      <link>https://thebrink.netlify.app/disable-core-dumps/</link>
       <pubDate>Sun, 01 Oct 2023 09:50:44 +0500</pubDate>
       
-      <guid>http://localhost:1313/disable-core-dumps/</guid>
+      <guid>https://thebrink.netlify.app/disable-core-dumps/</guid>
       <description>Disabling heavy core dumps that are rarely useful</description>
       <content:encoded><![CDATA[<h2 id="setting-limits">Setting Limits</h2>
 <ul>
@@ -325,10 +290,10 @@ kernel.core_pattern= |/bin/false
     
     <item>
       <title>Build.prop Tweaks</title>
-      <link>http://localhost:1313/build-prop-tweaks/</link>
+      <link>https://thebrink.netlify.app/build-prop-tweaks/</link>
       <pubDate>Fri, 29 Sep 2023 10:49:34 +0500</pubDate>
       
-      <guid>http://localhost:1313/build-prop-tweaks/</guid>
+      <guid>https://thebrink.netlify.app/build-prop-tweaks/</guid>
       <description>Making Android Better</description>
       <content:encoded><![CDATA[<h2 id="buildprop-tweaks">Build.Prop Tweaks</h2>
 <pre tabindex="0"><code># enable software keys
@@ -387,45 +352,11 @@ service.adb.tcp.port=5555
     </item>
     
     <item>
-      <title>My Configs</title>
-      <link>http://localhost:1313/my-configs/</link>
-      <pubDate>Wed, 20 Sep 2023 19:08:46 +0500</pubDate>
-      
-      <guid>http://localhost:1313/my-configs/</guid>
-      <description>All my configs and fixes in one place</description>
-      <content:encoded><![CDATA[<h2 id="linux">Linux</h2>
-<ul>
-<li><a href="/autologin-linux/" target="_blank">One Click Boot</a></li>
-<li><a href="/regenerating-configs-using-pacman/" target="_blank">Regenerating Config Files on Arch</a></li>
-<li><a href="/spotx" target="_blank">Spotify Adblock</a></li>
-<li><a href="/disable-core-dumps" target="_blank">Disabling Core Dumps</a></li>
-</ul>
-<h2 id="android">Android</h2>
-<ul>
-<li><a href="/android-tweaks/" target="_blank">Build.prop tweaks</a></li>
-<li><a href="/adb-tricks/" target="_blank">ADB Backup commands</a></li>
-</ul>
-]]></content:encoded>
-    </item>
-    
-    <item>
-      <title>Directly Stream mega.nz video</title>
-      <link>http://localhost:1313/posts/2023/streaming-mega-files-directly/</link>
-      <pubDate>Sat, 09 Sep 2023 09:14:45 +0500</pubDate>
-      
-      <guid>http://localhost:1313/posts/2023/streaming-mega-files-directly/</guid>
-      <description>&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;megatools dl &amp;#34;https://mega.nz/#hashvideo&amp;#34; --path - | mpv -
-&lt;/code&gt;&lt;/pre&gt;</description>
-      <content:encoded><![CDATA[<pre tabindex="0"><code>megatools dl &#34;https://mega.nz/#hashvideo&#34; --path - | mpv -
-</code></pre>]]></content:encoded>
-    </item>
-    
-    <item>
       <title>Autologin Linux</title>
-      <link>http://localhost:1313/autologin-linux/</link>
+      <link>https://thebrink.netlify.app/autologin-linux/</link>
       <pubDate>Sat, 09 Sep 2023 08:45:55 +0500</pubDate>
       
-      <guid>http://localhost:1313/autologin-linux/</guid>
+      <guid>https://thebrink.netlify.app/autologin-linux/</guid>
       <description>For One Click Boot</description>
       <content:encoded><![CDATA[<p>Getting one click boot is very satisfactory but you should know the security risks asscoiated with it. Nevertheless, here is the guide to Setup Autologin.</p>
 <h2 id="configuring-tty">Configuring TTY</h2>
@@ -462,10 +393,10 @@ fi
     
     <item>
       <title>Basic Git Cheatsheat</title>
-      <link>http://localhost:1313/git-cheatsheat/</link>
+      <link>https://thebrink.netlify.app/git-cheatsheat/</link>
       <pubDate>Sun, 13 Aug 2023 18:12:39 +0500</pubDate>
       
-      <guid>http://localhost:1313/git-cheatsheat/</guid>
+      <guid>https://thebrink.netlify.app/git-cheatsheat/</guid>
       <description>Manage your Project more easily </description>
       <content:encoded><![CDATA[<p>Git is a very powerful version control and a project managing tool. Every dev has to use git for projects. Below is my git cheatsheat. Below are some basic commands and some settings every developer should know</p>
 <h2 id="basics">Basics</h2>
@@ -518,10 +449,10 @@ where n is the number of commits to be reverted.</li>
     
     <item>
       <title>Effortless Directory Regeneration Using Pacman</title>
-      <link>http://localhost:1313/regenerating-configs-using-pacman/</link>
+      <link>https://thebrink.netlify.app/regenerating-configs-using-pacman/</link>
       <pubDate>Tue, 04 Jul 2023 13:06:37 +0500</pubDate>
       
-      <guid>http://localhost:1313/regenerating-configs-using-pacman/</guid>
+      <guid>https://thebrink.netlify.app/regenerating-configs-using-pacman/</guid>
       <description>&lt;p&gt;I was trying to edit /etc/pam.d and fix elogind on my Artix Installation. Unfortunately, It went badly and I messed up my pam.d directory.However, I Found a Fix. In pacman, It is very easy to check files owned by packages. So, We can simply generate a list of packages which have files in pam.d and reinstall them.&lt;/p&gt;
 &lt;h2 id=&#34;steps&#34;&gt;Steps&lt;/h2&gt;
 &lt;ol&gt;
@@ -546,10 +477,10 @@ where n is the number of commits to be reverted.</li>
     
     <item>
       <title>Decentralized Social Media</title>
-      <link>http://localhost:1313/decentralized-social-media/</link>
+      <link>https://thebrink.netlify.app/decentralized-social-media/</link>
       <pubDate>Mon, 19 Jun 2023 21:05:15 +0500</pubDate>
       
-      <guid>http://localhost:1313/decentralized-social-media/</guid>
+      <guid>https://thebrink.netlify.app/decentralized-social-media/</guid>
       <description>Is Social Media better off Decentralized?</description>
       <content:encoded><![CDATA[<p>Social Media has changed drastically over the years.But the question is &ldquo;Can you really trust these companies?&rdquo;. Decentralized social media apps and websites are gaining traction especially because of recent policy changes of social media apps such as Reddit and Twitter. Last Year, Twitter was acquired by Elon Musk and raised API prices and changed the platform for better or worse. Similarly, Reddit also increased its API prices. Decentralized Social Media such as Mastodon, Lemmy, and Kbin gained popularity due to this.</p>
 <h2 id="advantages">Advantages</h2>
@@ -568,10 +499,10 @@ where n is the number of commits to be reverted.</li>
     
     <item>
       <title>Blocking Ads on Spotify</title>
-      <link>http://localhost:1313/spotx/</link>
+      <link>https://thebrink.netlify.app/spotx/</link>
       <pubDate>Wed, 04 Jan 2023 13:05:38 +0500</pubDate>
       
-      <guid>http://localhost:1313/spotx/</guid>
+      <guid>https://thebrink.netlify.app/spotx/</guid>
       <description>&lt;p&gt;&lt;em&gt;Are you tired of constantly being interrupted by ads while listening to your favorite music on Spotify?&lt;/em&gt; If so, you&amp;rsquo;re in luck! I just stumbled upon SpotX, the Spotify ad blocker that will revolutionize the way you listen to music.&lt;br&gt;
 SpotX and BlockTheSpot are simple, lightweight tools that blocks all ads on Spotify, allowing you to enjoy uninterrupted music all day long. With SpotX, you no longer have to put up with annoying ads or pay for a premium subscription to get rid of them. Simply download the tool, run it, and you&amp;rsquo;re good to go.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p><em>Are you tired of constantly being interrupted by ads while listening to your favorite music on Spotify?</em> If so, you&rsquo;re in luck! I just stumbled upon SpotX, the Spotify ad blocker that will revolutionize the way you listen to music.<br>

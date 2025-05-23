@@ -1,5 +1,5 @@
 ---
-title: "Installing Windows Using Only CMD"
+title: "Installing Windows Only Using CMD"
 date: 2023-10-06T18:38:39+05:00
 description: "The Real Way to Install Windows!!"
 url: "/shenanigan-free-windows-installation/"

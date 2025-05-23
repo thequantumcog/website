@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Linux on The Brink || Tech Journal</title>
-    <link>http://localhost:1313/categories/linux/</link>
+    <link>https://thebrink.netlify.app/categories/linux/</link>
     <description>Recent content in Linux on The Brink || Tech Journal</description>
     <image>
-      <url>http://localhost:1313/images/logo-light.webp</url>
-      <link>http://localhost:1313/images/logo-light.webp</link>
+      <url>https://thebrink.netlify.app/images/logo-light.webp</url>
+      <link>https://thebrink.netlify.app/images/logo-light.webp</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 15 Nov 2023 19:15:49 +0500</lastBuildDate><atom:link href="http://localhost:1313/categories/linux/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 15 Nov 2023 19:15:49 +0500</lastBuildDate><atom:link href="https://thebrink.netlify.app/categories/linux/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Create Swapfile</title>
-      <link>http://localhost:1313/create-swapfile/</link>
+      <link>https://thebrink.netlify.app/create-swapfile/</link>
       <pubDate>Wed, 15 Nov 2023 19:15:49 +0500</pubDate>
       
-      <guid>http://localhost:1313/create-swapfile/</guid>
+      <guid>https://thebrink.netlify.app/create-swapfile/</guid>
       <description>&lt;p&gt;Swapfile and swap-partitions are rarely used now-a-days. But they still have one major use case which is hibernation. Use the following Commands to create and enable swapfile&lt;/p&gt;
 &lt;h3 id=&#34;commands&#34;&gt;Commands&lt;/h3&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo fallocate -l 6G /swapfile
@@ -42,10 +42,10 @@ sudo swapon /swapfile
     
     <item>
       <title>Optimizing Linux Boot Time</title>
-      <link>http://localhost:1313/optimizing-boot-time/</link>
+      <link>https://thebrink.netlify.app/optimizing-boot-time/</link>
       <pubDate>Thu, 05 Oct 2023 17:35:10 +0500</pubDate>
       
-      <guid>http://localhost:1313/optimizing-boot-time/</guid>
+      <guid>https://thebrink.netlify.app/optimizing-boot-time/</guid>
       <description>Boot your Linux Machine instantly</description>
       <content:encoded><![CDATA[<p>Boot time is how much time it takes to boot your computer when you press your power button. A lot of things can slow down your boot on Linux. In this article we will discuss this in detail.</p>
 <h2 id="systemd-optimizations">Systemd optimizations</h2>
@@ -80,10 +80,10 @@ If there is output of this command, then add <code>libahci.ignore_sss=1</code> t
     
     <item>
       <title>Disable Core Dumps</title>
-      <link>http://localhost:1313/disable-core-dumps/</link>
+      <link>https://thebrink.netlify.app/disable-core-dumps/</link>
       <pubDate>Sun, 01 Oct 2023 09:50:44 +0500</pubDate>
       
-      <guid>http://localhost:1313/disable-core-dumps/</guid>
+      <guid>https://thebrink.netlify.app/disable-core-dumps/</guid>
       <description>Disabling heavy core dumps that are rarely useful</description>
       <content:encoded><![CDATA[<h2 id="setting-limits">Setting Limits</h2>
 <ul>
@@ -104,10 +104,10 @@ kernel.core_pattern= |/bin/false
     
     <item>
       <title>Effortless Directory Regeneration Using Pacman</title>
-      <link>http://localhost:1313/regenerating-configs-using-pacman/</link>
+      <link>https://thebrink.netlify.app/regenerating-configs-using-pacman/</link>
       <pubDate>Tue, 04 Jul 2023 13:06:37 +0500</pubDate>
       
-      <guid>http://localhost:1313/regenerating-configs-using-pacman/</guid>
+      <guid>https://thebrink.netlify.app/regenerating-configs-using-pacman/</guid>
       <description>&lt;p&gt;I was trying to edit /etc/pam.d and fix elogind on my Artix Installation. Unfortunately, It went badly and I messed up my pam.d directory.However, I Found a Fix. In pacman, It is very easy to check files owned by packages. So, We can simply generate a list of packages which have files in pam.d and reinstall them.&lt;/p&gt;
 &lt;h2 id=&#34;steps&#34;&gt;Steps&lt;/h2&gt;
 &lt;ol&gt;
@@ -132,10 +132,10 @@ kernel.core_pattern= |/bin/false
     
     <item>
       <title>Blocking Ads on Spotify</title>
-      <link>http://localhost:1313/spotx/</link>
+      <link>https://thebrink.netlify.app/spotx/</link>
       <pubDate>Wed, 04 Jan 2023 13:05:38 +0500</pubDate>
       
-      <guid>http://localhost:1313/spotx/</guid>
+      <guid>https://thebrink.netlify.app/spotx/</guid>
       <description>&lt;p&gt;&lt;em&gt;Are you tired of constantly being interrupted by ads while listening to your favorite music on Spotify?&lt;/em&gt; If so, you&amp;rsquo;re in luck! I just stumbled upon SpotX, the Spotify ad blocker that will revolutionize the way you listen to music.&lt;br&gt;
 SpotX and BlockTheSpot are simple, lightweight tools that blocks all ads on Spotify, allowing you to enjoy uninterrupted music all day long. With SpotX, you no longer have to put up with annoying ads or pay for a premium subscription to get rid of them. Simply download the tool, run it, and you&amp;rsquo;re good to go.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p><em>Are you tired of constantly being interrupted by ads while listening to your favorite music on Spotify?</em> If so, you&rsquo;re in luck! I just stumbled upon SpotX, the Spotify ad blocker that will revolutionize the way you listen to music.<br>

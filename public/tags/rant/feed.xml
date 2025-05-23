@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Rant on The Brink || Tech Journal</title>
-    <link>http://localhost:1313/tags/rant/</link>
+    <link>https://thebrink.netlify.app/tags/rant/</link>
     <description>Recent content in Rant on The Brink || Tech Journal</description>
     <image>
-      <url>http://localhost:1313/images/logo-light.webp</url>
-      <link>http://localhost:1313/images/logo-light.webp</link>
+      <url>https://thebrink.netlify.app/images/logo-light.webp</url>
+      <link>https://thebrink.netlify.app/images/logo-light.webp</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 02 Oct 2023 11:15:01 +0500</lastBuildDate><atom:link href="http://localhost:1313/tags/rant/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 02 Oct 2023 11:15:01 +0500</lastBuildDate><atom:link href="https://thebrink.netlify.app/tags/rant/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Problem With Smart Televisions</title>
-      <link>http://localhost:1313/making-a-real-smart-tv/</link>
+      <link>https://thebrink.netlify.app/making-a-real-smart-tv/</link>
       <pubDate>Mon, 02 Oct 2023 11:15:01 +0500</pubDate>
       
-      <guid>http://localhost:1313/making-a-real-smart-tv/</guid>
+      <guid>https://thebrink.netlify.app/making-a-real-smart-tv/</guid>
       <description>&lt;h2 id=&#34;the-problem&#34;&gt;The Problem&lt;/h2&gt;
 &lt;p&gt;Televisions started as an easy to use device, you just pressed a button, and a channel played. Now-a-days, Television has been transformed into “SmartTV” Full of Ads, Tracking Built-In (as a feature btw) and Bloated UI&lt;/p&gt;
 &lt;h2 id=&#34;optimizing-electronics&#34;&gt;Optimizing Electronics&lt;/h2&gt;
@@ -50,10 +50,10 @@
     
     <item>
       <title>Decentralized Social Media</title>
-      <link>http://localhost:1313/decentralized-social-media/</link>
+      <link>https://thebrink.netlify.app/decentralized-social-media/</link>
       <pubDate>Mon, 19 Jun 2023 21:05:15 +0500</pubDate>
       
-      <guid>http://localhost:1313/decentralized-social-media/</guid>
+      <guid>https://thebrink.netlify.app/decentralized-social-media/</guid>
       <description>Is Social Media better off Decentralized?</description>
       <content:encoded><![CDATA[<p>Social Media has changed drastically over the years.But the question is &ldquo;Can you really trust these companies?&rdquo;. Decentralized social media apps and websites are gaining traction especially because of recent policy changes of social media apps such as Reddit and Twitter. Last Year, Twitter was acquired by Elon Musk and raised API prices and changed the platform for better or worse. Similarly, Reddit also increased its API prices. Decentralized Social Media such as Mastodon, Lemmy, and Kbin gained popularity due to this.</p>
 <h2 id="advantages">Advantages</h2>

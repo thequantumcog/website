@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Git on The Brink || Tech Journal</title>
-    <link>http://localhost:1313/tags/git/</link>
+    <link>https://thebrink.netlify.app/tags/git/</link>
     <description>Recent content in Git on The Brink || Tech Journal</description>
     <image>
-      <url>http://localhost:1313/images/logo-light.webp</url>
-      <link>http://localhost:1313/images/logo-light.webp</link>
+      <url>https://thebrink.netlify.app/images/logo-light.webp</url>
+      <link>https://thebrink.netlify.app/images/logo-light.webp</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 13 Aug 2023 18:12:39 +0500</lastBuildDate><atom:link href="http://localhost:1313/tags/git/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 13 Aug 2023 18:12:39 +0500</lastBuildDate><atom:link href="https://thebrink.netlify.app/tags/git/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Basic Git Cheatsheat</title>
-      <link>http://localhost:1313/git-cheatsheat/</link>
+      <link>https://thebrink.netlify.app/git-cheatsheat/</link>
       <pubDate>Sun, 13 Aug 2023 18:12:39 +0500</pubDate>
       
-      <guid>http://localhost:1313/git-cheatsheat/</guid>
+      <guid>https://thebrink.netlify.app/git-cheatsheat/</guid>
       <description>Manage your Project more easily </description>
       <content:encoded><![CDATA[<p>Git is a very powerful version control and a project managing tool. Every dev has to use git for projects. Below is my git cheatsheat. Below are some basic commands and some settings every developer should know</p>
 <h2 id="basics">Basics</h2>

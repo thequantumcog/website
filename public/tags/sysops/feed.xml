@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>SysOps on The Brink || Tech Journal</title>
-    <link>http://localhost:1313/tags/sysops/</link>
+    <link>https://thebrink.netlify.app/tags/sysops/</link>
     <description>Recent content in SysOps on The Brink || Tech Journal</description>
     <image>
-      <url>http://localhost:1313/images/logo-light.webp</url>
-      <link>http://localhost:1313/images/logo-light.webp</link>
+      <url>https://thebrink.netlify.app/images/logo-light.webp</url>
+      <link>https://thebrink.netlify.app/images/logo-light.webp</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 13 Aug 2023 18:12:39 +0500</lastBuildDate><atom:link href="http://localhost:1313/tags/sysops/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 13 Aug 2023 18:12:39 +0500</lastBuildDate><atom:link href="https://thebrink.netlify.app/tags/sysops/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Basic Git Cheatsheat</title>
-      <link>http://localhost:1313/git-cheatsheat/</link>
+      <link>https://thebrink.netlify.app/git-cheatsheat/</link>
       <pubDate>Sun, 13 Aug 2023 18:12:39 +0500</pubDate>
       
-      <guid>http://localhost:1313/git-cheatsheat/</guid>
+      <guid>https://thebrink.netlify.app/git-cheatsheat/</guid>
       <description>Manage your Project more easily </description>
       <content:encoded><![CDATA[<p>Git is a very powerful version control and a project managing tool. Every dev has to use git for projects. Below is my git cheatsheat. Below are some basic commands and some settings every developer should know</p>
 <h2 id="basics">Basics</h2>
@@ -69,10 +69,10 @@ where n is the number of commits to be reverted.</li>
     
     <item>
       <title>Effortless Directory Regeneration Using Pacman</title>
-      <link>http://localhost:1313/regenerating-configs-using-pacman/</link>
+      <link>https://thebrink.netlify.app/regenerating-configs-using-pacman/</link>
       <pubDate>Tue, 04 Jul 2023 13:06:37 +0500</pubDate>
       
-      <guid>http://localhost:1313/regenerating-configs-using-pacman/</guid>
+      <guid>https://thebrink.netlify.app/regenerating-configs-using-pacman/</guid>
       <description>&lt;p&gt;I was trying to edit /etc/pam.d and fix elogind on my Artix Installation. Unfortunately, It went badly and I messed up my pam.d directory.However, I Found a Fix. In pacman, It is very easy to check files owned by packages. So, We can simply generate a list of packages which have files in pam.d and reinstall them.&lt;/p&gt;
 &lt;h2 id=&#34;steps&#34;&gt;Steps&lt;/h2&gt;
 &lt;ol&gt;
