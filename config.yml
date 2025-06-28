@@ -1,5 +1,5 @@
-title: The Brink || Tech Journal
-baseURL: "https://thebrink.netlify.app/"
+title: The Brink || My Personal Blog
+baseURL: "https://blog.thisjust.rocks"
 theme: hugo-PaperModX
 
 #paginate: 10
