@@ -69,7 +69,7 @@ params:
     safari_pinned_tab: "apple-touch-icon.png"
   homeInfoParams:
     Title: "Hey There, \U0001F44B"
-    Content: This Journal helps me to share my thoughts and experiences on the world of technology. From quirky hobby distros to fine-tuning servers, I’m passionate about exploring the intricacies of the computer world. Join me on this exciting journey as we dive into the realm of technology, one command at a time. 
+    Content: This Journal helps me share my thoughts and experiences on the world of technology. So, it is a mixtue of my Tech Notes, Random Thoughts and things I find cool. If you find it interesting, you can follow along.
  
   fuseOpts:
     isCaseSensitive: false
