@@ -1,9 +1,9 @@
 ---
-title: "Basic Git Cheatsheat"
+title: "Basic Git Cheatsheet"
 date: 2023-08-13T18:12:39+05:00
 description: "Manage your Project more easily "
 disableHLJS: false
-url: "git-cheatsheat"
+url: "git-cheatsheet"
 # cover:
 #     image: "<image path/url>"
 #     alt: "<alt text>"
@@ -41,6 +41,10 @@ This is particularly useful in merge conflicts and syncing forks.
 * `git reset --hard HEAD~n` (Doesn't retain uncommited changes)
 * `git reset --soft HEAD~n` (Retains uncommited Changes)
 where n is the number of commits to be reverted.
+## Patches
+* `git patch`
+* `git -am` (also commits the change)
+* `git diff > filename.patch` creates a patch
 ## Git Configs
 You can also use git configs to create your own shortcuts and much more. The one git setting I always use is
 * Auto Setting push remote
