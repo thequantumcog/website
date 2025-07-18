@@ -13,6 +13,7 @@ If stored elsewhere, you must prefix the path with device identification when us
 ```grub
 loopback loop (hd1,2)$iso_path
 ````
+Explained in greater detail [in this section](#different-partition)
 
 ### Example GRUB Menu Entry
 
@@ -45,7 +46,7 @@ initrd (loop)/isolinux/initrd.img
 
 ---
 
-### Booting ISOs From Another Partition
+### Booting ISOs From Another Partition {#different-partition}
 
 #### Global (outside any `menuentry`):
 
