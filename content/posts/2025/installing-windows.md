@@ -1,8 +1,8 @@
 ---
-title: "Installing Usable Windows the Improper Way"
+title: "Making Windows Tolerable"
 date: 2025-07-04T11:12:13+05:00
 description: "Just a quick consolidation of all my tweaks in one place"
-url: "/installing-windows/"
+url: "/fixing-windows/"
 tags:
  - Windows
 # cover:

@@ -19,7 +19,7 @@ This is **not** a guide on how to install GSIs. This is basically a checklist  f
 * After Installation, install the [gsi module](https://github.com/thequantumcog/module-X6831/releases/tag/v2.2) 
 * Make [GSI RW](https://blog.thisjust.rocks/make-gsi-rw/)
 * Run debloat.sh
-* Install [G-Photos Module](https://gitlab.com/cuynu/gphotos-unlimited-zygisk/-/releases), [Play Integrity Fork](github.com/osm0sis/PlayIntegrityFork/releases/latest), [Tricky Store](https://github.com/5ec1cff/TrickyStore/releases/latest), [Tricky Store Addon List](https://github.com/KOWX712/Tricky-Addon-Update-Target-List/releases/latest)
+* Install [G-Photos Module](https://gitlab.com/cuynu/gphotos-unlimited-zygisk/-/releases), [Play Integrity Fork](https://github.com/osm0sis/PlayIntegrityFork/releases/latest)/[Play Integrity Fix](https://github.com/KOWX712/PlayIntegrityFix/releases/latest), [Tricky Store](https://github.com/5ec1cff/TrickyStore/releases/latest), [Tricky Store Addon List](https://github.com/KOWX712/Tricky-Addon-Update-Target-List/releases/latest), [Disable logd](https://github.com/Xenoxis/magisk-disable-logd/releases/latest)
 * (Optional) Install [NavTweaks](https://github.com/DanGLES3/Hide-Navbar/releases/latest)
 * Disable Notification Bubbles, disable show sensitive notif on lockscreen, check notification access, disable notification dots, disable Notification Light
 * Disable Lift To Wake Display, change pm to bitwarden, disable sync for some accounts
