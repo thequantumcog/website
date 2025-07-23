@@ -9,7 +9,7 @@ slug: "/wireguard-split-tunelling/"
 #     caption: "<text>"
 #     relative: false # when using page bundles set this to true
 #     hidden: true # only hide on current single page
-draft: true
+draft: false
 tags: [Networking,Linux]
 categories: Linux
 ---
