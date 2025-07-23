@@ -2,7 +2,6 @@ title: The Brink || My Personal Blog
 baseURL: "https://blog.thisjust.rocks"
 theme: hugo-PaperModX
 
-#paginate: 10
 pagination.pagerSize: 10
 languageCode: "en-us"
 enableInlineShortcodes: true
