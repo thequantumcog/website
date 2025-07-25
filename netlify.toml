@@ -1,0 +1,5 @@
+[[redirects]]
+  from   = "https://thisjust.rocks/*"
+  to     = "https://blog.thisjust.rocks/:splat"
+  status = 301
+  force  = true
